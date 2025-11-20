@@ -2,6 +2,7 @@ import ImageSlider from "./components/ImageSlider";
 import WhyChooseUs from "./components/WhyChooseUs";
 import UpcomingProducts from "./components/UpcomingProducts";
 import WhyPartnerUs from "./components/WhyPartnerUs"
+import ProductRange from "./components/ProductRange"
 
 export default function MergedSections() {
   return (
@@ -120,6 +121,7 @@ export default function MergedSections() {
           </div>
         </div>
       </section>
+      <ProductRange/>
       <UpcomingProducts />
       <WhyChooseUs />
 

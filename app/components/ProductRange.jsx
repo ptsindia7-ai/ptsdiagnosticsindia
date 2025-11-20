@@ -1,103 +1,84 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { useState } from "react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
-export default function ProductRange() {
-  const products = [
-    { img: "/products/p1.png" },
-    { img: "/products/p2.png" },
-    {
-      img: "/products/p3.png",
-      highlight: true, // middle big card
-      title: "ICan i3 CGM",
-      subtitle: "Continuous Glucose Monitor",
-      tags: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC-traceable"],
-    },
-    { img: "/products/p4.png" },
-    { img: "/products/p5.png" },
+export default function ProductCarousel() {
+  const images = [
+    "products/prod1.png",
+    "products/prod2.png",
+    "products/prod3.png",
+    "products/prod4.png",
+    "products/prod5.png",
   ];
 
-  return (
-    <section className="w-full bg-[#D71926] py-16 text-center relative">
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-      {/* Heading */}
-      <h2 className="text-white text-3xl font-semibold">
+  const next = () => {
+    if (currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const prev = () => {
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  return (
+    <section className="bg-[#D51827] w-full py-14 overflow-hidden">
+
+      {/* HEADING */}
+      <h2 className="text-white text-3xl font-semibold text-center mb-12">
         Explore Our Product Range
       </h2>
 
-      {/* Slider */}
-      <div className="mt-10 px-4 relative max-w-7xl mx-auto">
-        <Swiper
-          modules={[Navigation]}
-          slidesPerView={"auto"}
-          spaceBetween={40}
-          centeredSlides={true}
-          navigation={{
-            nextEl: ".next-btn",
-            prevEl: ".prev-btn",
+      {/* SLIDER WRAPPER */}
+      <div className="relative w-full flex justify-center px-6">
+        <div
+          className="flex gap-10 transition-transform duration-500"
+          style={{
+            transform: `translateX(-${currentIndex * 260}px)`,
           }}
-          className="flex items-center"
         >
-          {products.map((item, i) => (
-            <SwiperSlide
-              key={i}
-              className={`!w-[230px] flex justify-center ${
-                item.highlight ? "!w-[380px]" : ""
-              }`}
+          {images.map((img, index) => (
+            <div
+              key={index}
+              className="min-w-[230px] h-[260px]rounded-xl flex items-center justify-center"
             >
-              <div
-                className={`rounded-[32px] overflow-hidden bg-white shadow-md flex items-center justify-center transition-all duration-300 ${
-                  item.highlight ? "h-[390px] w-[380px]" : "h-[300px] w-[230px]"
-                }`}
-              >
-                <img
-                  src={item.img}
-                  alt=""
-                  className="w-full h-full object-contain p-6"
-                />
-
-                {/* Highlight card info */}
-                {item.highlight && (
-                  <div className="absolute bottom-5 left-1/2 -translate-x-1/2 bg-white rounded-3xl px-6 py-4 shadow-md w-[260px] text-left">
-                    <h3 className="text-[#D71926] font-semibold text-lg">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">{item.subtitle}</p>
-
-                    <div className="flex flex-wrap gap-2 mt-3">
-                      {item.tags.map((tag, t) => (
-                        <span
-                          key={t}
-                          className="text-[11px] px-2 py-1 rounded-full bg-gray-100 text-gray-700"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            </SwiperSlide>
+              <img src={img} className="h-full object-contain p-4" />
+            </div>
           ))}
-        </Swiper>
+        </div>
       </div>
 
-      {/* Explore More Button */}
-      <div className="mt-10">
-        <button className="bg-white text-[#D71926] px-10 py-3 rounded-xl font-medium shadow-md hover:scale-105 transition">
-          Explore More
-        </button>
-      </div>
+      {/* BUTTON + ARROWS */}
+      <div className="flex items-center justify-between max-w-[1400px] mx-auto mt-10 px-6">
 
-      {/* Navigation buttons */}
-      <div className="flex justify-center gap-6 mt-12">
-        <button className="prev-btn w-12 h-12 bg-white rounded-full flex items-center justify-center shadow hover:scale-110 transition text-[#D71926] text-xl">
-          ←
-        </button>
-        <button className="next-btn w-12 h-12 bg-white rounded-full flex items-center justify-center shadow hover:scale-110 transition text-[#D71926] text-xl">
-          →
-        </button>
+        {/* CENTER BUTTON */}
+        <div className="flex flex-1 justify-center">
+          <button className="bg-white text-[#D51827] font-semibold px-10 py-3 rounded-full shadow-lg hover:bg-gray-100 transition">
+            Explore More
+          </button>
+        </div>
+
+        {/* RIGHT ALIGNED ARROWS */}
+        <div className="flex gap-4">
+          <button
+            onClick={prev}
+            className="bg-white text-black p-3 rounded-full shadow-md hover:bg-gray-200"
+          >
+            <ArrowLeft />
+          </button>
+
+          <button
+            onClick={next}
+            className="bg-white text-black p-3 rounded-full shadow-md hover:bg-gray-200"
+          >
+            <ArrowRight />
+          </button>
+        </div>
       </div>
     </section>
   );
