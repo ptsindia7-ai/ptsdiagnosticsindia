@@ -1,8 +1,8 @@
 import ImageSlider from "./components/ImageSlider";
 import WhyChooseUs from "./components/WhyChooseUs";
 import UpcomingProducts from "./components/UpcomingProducts";
-import WhyPartnerUs from "./components/WhyPartnerUs"
-import ProductRange from "./components/ProductRange"
+import WhyPartnerUs from "./components/WhyPartnerUs";
+import ProductRange from "./components/ProductRange";
 
 export default function MergedSections() {
   return (
@@ -97,7 +97,7 @@ export default function MergedSections() {
 
           {/* RIGHT CONTENT */}
           <div>
-            <p className="text-red-600 font-semibold tracking-wide flex items-center gap-2">
+            <p className="text-[#DF1931] font-semibold tracking-wide flex items-center gap-2">
               WHO WE ARE
               <span className="text-xl font-bold">
                 <img src="images/plus.svg" />
@@ -121,7 +121,7 @@ export default function MergedSections() {
           </div>
         </div>
       </section>
-      <ProductRange/>
+      <ProductRange />
       <UpcomingProducts />
       <WhyChooseUs />
 
@@ -201,7 +201,7 @@ export default function MergedSections() {
           className="absolute bottom-0 right-0 w-40 pointer-events-none"
         />
       </section>
-      <WhyPartnerUs/>
+      <WhyPartnerUs />
     </>
   );
 }

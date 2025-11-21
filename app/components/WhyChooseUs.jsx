@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
           className="absolute top-0 left-0 w-35 pointer-events-none"
         />
         <div className="text-center flex flex-col items-center">
-          <p className="text-red-600 font-semibold tracking-wide flex items-center gap-2">
+          <p className="text-[#DF1931] font-semibold tracking-wide flex items-center gap-2">
             WHY CHOOSE US
             <span className="text-xl font-bold">
               <img src="images/plus.svg" />
