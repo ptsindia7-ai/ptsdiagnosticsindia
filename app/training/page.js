@@ -25,13 +25,13 @@ export default function MergedSections() {
               href="/products"
               className="bg-[#DF1931] hover:bg-red-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-all"
             >
-             
+             Explore Our Products
             </a>
           </div>
         </div>
       </section>
 
-      <section className="w-full py-12">
+      <section className="w-full">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* CARD 1 */}
           <div className="rounded-3xl p-6">
