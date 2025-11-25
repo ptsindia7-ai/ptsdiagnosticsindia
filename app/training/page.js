@@ -25,7 +25,7 @@ export default function MergedSections() {
               href="/products"
               className="bg-[#DF1931] hover:bg-red-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-all"
             >
-              Explore Our Products
+             
             </a>
           </div>
         </div>
