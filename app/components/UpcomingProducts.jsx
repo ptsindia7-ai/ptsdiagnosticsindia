@@ -5,18 +5,22 @@ export default function UpcomingProducts() {
     {
       name: "Palm Lab",
       img: "/images/palm-lab.png",
+      hoverImg: "/images/palm-lab-hover.png",
     },
     {
       name: "Ketone Meter",
       img: "/images/ketone.png",
+      hoverImg: "/images/ketone-hover.png",
     },
     {
       name: "H101 & 102",
       img: "/images/h101.png",
+      hoverImg: "/images/h101-hover.png",
     },
     {
       name: "Arm 30E+",
       img: "/images/arm.png",
+      hoverImg: "/images/arm-hover.png",
     },
   ];
 
@@ -24,8 +28,6 @@ export default function UpcomingProducts() {
     <section className="w-full py-16">
       {/* Top Heading Section */}
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        
-        {/* LEFT TEXT */}
         <div>
           <h3 className="text-sm text-[#DF1931] font-semibold flex items-center gap-1 uppercase tracking-wide">
             Innovation 
@@ -36,7 +38,6 @@ export default function UpcomingProducts() {
           </h2>
         </div>
 
-        {/* RIGHT BUTTON */}
         <a
           href="#"
           className="bg-[#DF1931] text-white px-6 py-3 rounded-lg text-sm font-medium shadow hover:bg-[#C71528] transition"
@@ -50,16 +51,23 @@ export default function UpcomingProducts() {
         {products.map((item, i) => (
           <div key={i} className="flex flex-col items-center">
             
-            {/* Product Box */}
-            <div className="w-full h-[260px] bg-white rounded-2xl border border-gray-200 flex items-center justify-center shadow-sm hover:shadow-md transition">
+            <div className="group w-full h-[260px] bg-white rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition relative">
+              
+              {/* Default Image */}
               <img
                 src={item.img}
                 alt={item.name}
-                className="w-40 h-40 object-contain"
+                className="w-40 h-40 object-contain transition-opacity duration-300 group-hover:opacity-0"
+              />
+
+              {/* Hover Image */}
+              <img
+                src={item.hoverImg}
+                alt={`${item.name} alternate`}
+                className="object-contain absolute inset-0 m-auto opacity-0 transition-opacity duration-300 group-hover:opacity-100"
               />
             </div>
 
-            {/* Product Name */}
             <p className="mt-4 text-gray-800 font-medium">{item.name}</p>
           </div>
         ))}
