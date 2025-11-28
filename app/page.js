@@ -79,7 +79,7 @@ export default function MergedSections() {
             </h2>
 
             <p className="text-gray-600 mt-4 sm:mt-5 leading-relaxed">
-              We are a global leader in innovative point-of-care diagnostic devices...
+              We are a global leader in innovative point-of-care diagnostic devices. From diabetes and lipid monitoring to multifunctional analyzers, our solutions help healthcare professionals make faster, more informed decisions—right at the point of care.
             </p>
 
             <button className="mt-5 sm:mt-7 bg-[#DF1931] text-white px-6 sm:px-7 py-3 rounded-lg font-medium">

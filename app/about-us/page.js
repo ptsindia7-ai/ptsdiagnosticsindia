@@ -93,7 +93,7 @@ export default function MergedSections() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
-                135+
+                100+
               </h3>
               <p className="text-sm sm:text-lg md:text-xl mt-2 opacity-90">
                 Countries
@@ -134,7 +134,7 @@ export default function MergedSections() {
         </h2>
 
         <p className="text-gray-600 text-center text-base sm:text-lg px-4">
-          From groundbreaking innovations to global milestones
+          From groundbreaking innovations to global milestones, our journey reflects a legacy of care and progress.
         </p>
 
         <div className="mt-10 flex justify-center overflow-x-auto px-4">
@@ -147,6 +147,141 @@ export default function MergedSections() {
 
       {/* VALUES, MISSION, EMPLOYEE MODEL — works well with responsive grids */}
       {/* ... values section unchanged but wrapped with px-4 sm:px-6 ... */}
+
+      <section className="w-full py-16 px-4 md:px-10 bg-white">
+        {/* MAIN HEADING */}
+        <h2 className="text-center text-3xl md:text-4xl font-semibold text-[#DF1931] mb-12">
+          One Sinocare
+        </h2>
+
+        {/* REUSABLE CARD STYLE */}
+        {/* Use this className for all red boxes */}
+
+        {/* MISSION */}
+        <div className="bg-[#DF1931] text-white rounded-3xl p-8 md:p-10 shadow-lg border-b-8 border-blue-400 max-w-xl mx-auto mb-10">
+          <h3 className="text-2xl font-semibold text-center mb-4">Mission</h3>
+          <p className="text-center leading-relaxed">
+            Guided by love with a commitment to global access and health
+            outcomes, we deliver innovative, high-quality solutions for people
+            living with diabetes and related chronic diseases.
+          </p>
+        </div>
+
+        {/* VISION */}
+        <div className="bg-[#DF1931] text-white rounded-3xl p-8 md:p-10 shadow-lg border-b-8 border-blue-400 max-w-3xl mx-auto mb-10">
+          <h3 className="text-2xl font-semibold text-center mb-4">Vision</h3>
+          <p className="text-center leading-relaxed">
+            Establishing ourselves as a leader in the delivery of digitally
+            enabled products which improve quality of life for people with
+            diabetes and related chronic diseases through affordable, accessible
+            technologies.
+          </p>
+        </div>
+
+        {/* CORE VALUES */}
+        <div className="bg-[#DF1931] text-white rounded-3xl p-8 md:p-10 shadow-lg border-b-8 border-blue-400 max-w-5xl mx-auto mb-10">
+          <h3 className="text-2xl font-semibold text-center mb-8">
+            Core Values
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+            {/* COLUMN 1 */}
+            <div>
+              <h4 className="font-semibold mb-2 flex items-center gap-2">
+                <span className="text-xl">✚</span> Commitment to Customers
+              </h4>
+              <p>
+                Commitment to enabling our customers to lead healthier lives
+                through high-quality, affordable, and easy to use products and
+                services.
+              </p>
+            </div>
+
+            {/* COLUMN 2 */}
+            <div>
+              <h4 className="font-semibold mb-2 flex items-center gap-2">
+                <span className="text-xl">✚</span> Commitment to Employees
+              </h4>
+              <p>
+                Provide a caring and fulfilling environment which values the
+                individual and fosters professional growth.
+              </p>
+            </div>
+
+            {/* COLUMN 3 */}
+            <div>
+              <h4 className="font-semibold mb-2 flex items-center gap-2">
+                <span className="text-xl">✚</span> Commitment to Partners,
+                Society, and Shareholders
+              </h4>
+              <p>
+                Provide a caring and fulfilling environment which values the
+                individual and fosters professional growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* EMPLOYEE BEHAVIORAL MODEL */}
+        <div className="bg-[#DF1931] text-white rounded-3xl p-8 md:p-10 shadow-lg border-b-8 border-blue-400 max-w-7xl mx-auto">
+          <h3 className="text-2xl font-semibold text-center mb-8">
+            Employee Behavioral Model
+          </h3>
+
+          <div className="grid md:grid-cols-3 gap-10">
+            {/* Column 1 */}
+            <div>
+              <h4 className="font-semibold mb-2 flex items-center gap-2">
+                <span className="text-xl">✚</span> Customer First –
+                Conscientiousness
+              </h4>
+              <ul className="list-disc ml-5 space-y-1">
+                <li>Understand customer needs through active listening</li>
+                <li>Have a sense of urgency</li>
+                <li>Learn from mistakes</li>
+                <li>Have a commitment to excellence</li>
+                <li>Committed to on-time deliveries</li>
+              </ul>
+            </div>
+
+            {/* Column 2 */}
+            <div>
+              <h4 className="font-semibold mb-2 flex items-center gap-2">
+                <span className="text-xl">✚</span> Embracing Change –
+                Collaboration
+              </h4>
+              <ul className="list-disc ml-5 space-y-1">
+                <li>Be open to change</li>
+                <li>Challenges bring growth</li>
+                <li>
+                  Have a mindset that Sinocare Group companies are one team
+                </li>
+                <li>Be open to other points of view</li>
+                <li>Build cross-functional relationships</li>
+              </ul>
+            </div>
+
+            {/* Column 3 */}
+            <div>
+              <h4 className="font-semibold mb-2 flex items-center gap-2">
+                <span className="text-xl">✚</span> Commitment to Partners,
+                Society, and Shareholders
+              </h4>
+              <ul className="list-disc ml-5 space-y-1">
+                <li>Never compromise on quality</li>
+                <li>
+                  Continuously develop new products, services, and solutions
+                </li>
+                <li>Have a continuous improvement mindset</li>
+                <li>
+                  Always exhibit professionalism with high ethical standards
+                </li>
+                <li>Strive to exceed expectations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* LET’S TALK SECTION */}
       <section className="relative w-full py-14 md:py-20">

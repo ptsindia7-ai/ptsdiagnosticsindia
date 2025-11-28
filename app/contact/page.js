@@ -51,7 +51,7 @@ export default function ConnectWithUs() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
-                135+
+                100+
               </h3>
               <p className="text-sm sm:text-lg md:text-xl mt-2 opacity-90">
                 Countries
