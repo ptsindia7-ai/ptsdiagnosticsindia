@@ -7,7 +7,7 @@ export default function Footer() {
         {/* COLUMN 1 — LOGO + TEXT + SOCIAL */}
         <div>
           <img
-            src="images/pts-logo.svg"
+            src="/images/pts-logo.svg"
             alt="PTS Diagnostics"
             className="h-12 object-contain mb-5"
           />
@@ -20,10 +20,10 @@ export default function Footer() {
 
           {/* SOCIAL ICONS */}
           <div className="flex gap-4">
-            <img src="images/fb.svg" alt="Facebook" className="h-8 w-8 cursor-pointer" />
-            <img src="images/insta.svg" alt="Instagram" className="h-8 w-8 cursor-pointer" />
-            <img src="images/link.svg" alt="LinkedIn" className="h-8 w-8 cursor-pointer" />
-            <img src="images/yt.svg" alt="YouTube" className="h-8 w-8 cursor-pointer" />
+            <img src="/images/fb.svg" alt="Facebook" className="h-8 w-8 cursor-pointer" />
+            <img src="/images/insta.svg" alt="Instagram" className="h-8 w-8 cursor-pointer" />
+            <img src="/images/link.svg" alt="LinkedIn" className="h-8 w-8 cursor-pointer" />
+            <img src="/images/yt.svg" alt="YouTube" className="h-8 w-8 cursor-pointer" />
           </div>
         </div>
 

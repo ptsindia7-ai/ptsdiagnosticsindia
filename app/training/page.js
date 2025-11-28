@@ -1,6 +1,8 @@
 import ImageSlider from "../components/ImageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import UpcomingProducts from "../components/UpcomingProducts";
+import Link from "next/link";
+import { trainingData } from "../data/trainingData";
 import WhyPartnerUs from "../components/WhyPartnerUs";
 
 export default function MergedSections() {
@@ -25,7 +27,7 @@ export default function MergedSections() {
               href="/products"
               className="bg-[#DF1931] hover:bg-red-700 text-white text-sm font-medium px-6 py-3 rounded-lg transition-all"
             >
-             Explore Our Products
+              Explore Our Products
             </a>
           </div>
         </div>
@@ -33,80 +35,32 @@ export default function MergedSections() {
 
       <section className="w-full">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {/* CARD 1 */}
-          <div className="rounded-3xl p-6">
-            {/* IMAGE BOX */}
-            <div className="w-full h-[300px] rounded-3xl  flex items-center justify-center overflow-hidden mb-6">
-              <img
-                src="/products/ican3.png"
-                alt="Ican - 3"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            {/* BOTTOM ROW */}
-            <div className="flex items-center justify-between w-full">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">
-                  ican - 3
-                </h3>
-                <p className="text-sm text-gray-500">Multi Monitoring Meter</p>
-              </div>
-
-              <button className="bg-[#DF1931] hover:bg-red-700 text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
+          {Object.entries(trainingData).map(([slug, product]) => (
+            <div key={slug} className="rounded-3xl p-6">
+              <div className="w-full h-[300px] rounded-3xl bg-white flex items-center justify-center mb-6">
                 <img
-                  src="/video.svg" // ← replace with your icon path
-                  alt="video icon"
-                  className="w-4 h-4"
+                  src={`/products/${slug}.png`}
+                  alt={product.title}
+                  className="w-full h-full object-contain"
                 />
-                Video
-              </button>
-            </div>
-          </div>
-
-          {/* CARD 2 */}
-          <div className="rounded-3xl p-6">
-            <div className="w-full h-[300px] rounded-3xl flex items-center justify-center overflow-hidden mb-6">
-              <img
-                src="/products/ican6.png"
-                alt="ican-I6"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            <div className="flex items-center justify-between w-full">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">ican-I6</h3>
-                <p className="text-sm text-gray-500">CGM</p>
               </div>
 
-              <button className="bg-[#DF1931] hover:bg-red-700 text-white px-10 py-3 rounded-xl text-sm">
-                Know more
-              </button>
-            </div>
-          </div>
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    {product.title}
+                  </h3>
+                </div>
 
-          {/* CARD 3 */}
-          <div className="rounded-3xl p-6">
-            <div className="w-full h-[300px] rounded-3xl flex items-center justify-center overflow-hidden mb-6">
-              <img
-                src="/products/a1cnow.png"
-                alt="A1CNOW+"
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            <div className="flex items-center justify-between w-full">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">A1CNOW+</h3>
-                <p className="text-sm text-gray-500">CGM</p>
+                <Link href={`/training/${slug}`}>
+                  <button className="bg-[#DF1931] text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
+                    <img src="/video.svg" className="w-4 h-4" />
+                    Video
+                  </button>
+                </Link>
               </div>
-
-              <button className="bg-[#DF1931] hover:bg-red-700 text-white px-10 py-3 rounded-xl text-sm">
-                Know more
-              </button>
             </div>
-          </div>
+          ))}
         </div>
       </section>
 
