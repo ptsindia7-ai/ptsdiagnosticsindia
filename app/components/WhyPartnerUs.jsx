@@ -33,14 +33,14 @@ export default function Testimonials() {
       rating: 4,
       time: "2 months",
       text: "Immediate access to diagnostic results allows our teams to accelerate treatment planning, significantly reducing patient wait times and improving overall care flow.",
-      name: "Sara Lee",
+      name: "Sara Lee,",
       role: "Healthcare Operations Manager",
     },
     {
       rating: 5,
       time: "6 months",
       text: "The integration of point-of-care technology has transformed our workflow, enabling physicians to make confident decisions without delays and enhancing the patient experience.",
-      name: "Michael Carter",
+      name: "Michael Carter,",
       role: "Senior Clinical Administrator",
     },
   ];

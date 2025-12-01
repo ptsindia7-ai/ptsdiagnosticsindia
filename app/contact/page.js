@@ -101,7 +101,7 @@ export default function ConnectWithUs() {
             <img
               src="/images/team.png"
               alt="Team Image"
-              className="w-full rounded-3xl shadow-lg object-cover"
+              className="w-full rounded-3xl object-cover"
             />
           </div>
 
