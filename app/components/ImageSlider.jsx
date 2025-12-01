@@ -1,30 +1,60 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
+
 export default function ThreeImageLayout() {
+  const images = [
+    "images/img1.png",
+    "images/img2.png",
+    "images/img3.png",
+    "images/img1.png",
+    "images/img2.png",
+    "images/img3.png",
+  ];
+
   return (
-    <div className="w-full max-w-7xl mx-auto px-6 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-        {/* IMAGE 1 */}
-        <img
-          src="images/img1.png"
-          className="w-full h-64 object-cover rounded-[30px]"
-          alt="Image 1"
-        />
-
-        {/* IMAGE 2 */}
-        <img
-          src="images/img2.png"
-          className="w-full h-64 object-cover rounded-[30px]"
-          alt="Image 2"
-        />
-
-        {/* IMAGE 3 */}
-        <img
-          src="images/img3.png"
-          className="w-full h-64 object-cover rounded-[30px]"
-          alt="Image 3"
-        />
-
-      </div>
+    <div className="w-full mx-auto px-3 sm:px-6 py-6 sm:py-10">
+      <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        slidesPerView={1}
+        spaceBetween={12}
+        autoplay={{ delay: 0, disableOnInteraction: false }}
+        speed={3500}
+        centeredSlides={true}
+        breakpoints={{
+          480: { slidesPerView: 1.2, spaceBetween: 14 },
+          640: { slidesPerView: 1.6, spaceBetween: 16 },
+          768: { slidesPerView: 2, spaceBetween: 18 },
+          1024: { slidesPerView: 3, spaceBetween: 20 },
+        }}
+        className="w-full"
+      >
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={img}
+              alt={`Image ${index + 1}`}
+              className="
+                w-full 
+                h-48 
+                sm:h-56 
+                md:h-64 
+                lg:h-72 
+                object-cover 
+                rounded-[20px] 
+                sm:rounded-[26px] 
+                md:rounded-[30px]
+                transition-all duration-700 
+                hover:scale-95
+              "
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 }
