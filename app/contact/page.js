@@ -44,14 +44,14 @@ export default function ConnectWithUs() {
         />
 
         <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 relative z-10">
-          <h2 className="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-10 sm:mb-12">
             Our Global Impact
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
-                100+
+                135+
               </h3>
               <p className="text-sm sm:text-lg md:text-xl mt-2 opacity-90">
                 Countries
@@ -120,28 +120,28 @@ export default function ConnectWithUs() {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="bg-gray-100 rounded-md px-4 py-3 w-full"
+                  className="bg-gray-100 rounded-md px-4 py-4 w-full"
                 />
                 <input
                   type="text"
                   placeholder="Whatsapp Number"
-                  className="bg-gray-100 rounded-md px-4 py-3 w-full"
+                  className="bg-gray-100 rounded-md px-4 py-4 w-full"
                 />
               </div>
 
               <input
                 type="email"
                 placeholder="E-mail"
-                className="bg-gray-100 rounded-md px-4 py-3 w-full"
+                className="bg-gray-100 rounded-md px-4 py-4 w-full"
               />
 
               <input
                 type="text"
                 placeholder="Your Address"
-                className="bg-gray-100 rounded-md px-4 py-3 w-full"
+                className="bg-gray-100 rounded-md px-4 py-4 w-full"
               />
 
-              <div className="bg-gray-100 rounded-md px-4 py-3 w-full flex items-center justify-between">
+              <div className="bg-gray-100 rounded-md px-4 py-4 w-full flex items-center justify-between">
                 <span className="text-gray-500">Upload Resume</span>
                 <label className="text-[#DF1931] font-medium cursor-pointer">
                   Upload File

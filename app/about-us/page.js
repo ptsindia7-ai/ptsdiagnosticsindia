@@ -71,20 +71,21 @@ export default function MergedSections() {
           className="absolute bottom-0 left-0 w-24 sm:w-40 pointer-events-none"
         />
 
-        <div className="max-w-7xl mx-auto text-center px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 relative z-10">
           <h2 className="text-2xl sm:text-3xl font-semibold mb-10 sm:mb-12">
             Our Global Impact
           </h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
-                100+
+                135+
               </h3>
               <p className="text-sm sm:text-lg md:text-xl mt-2 opacity-90">
                 Countries
               </p>
             </div>
+
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
                 2.5M+
@@ -93,6 +94,7 @@ export default function MergedSections() {
                 Devices Deployed
               </p>
             </div>
+
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
                 500K+
@@ -101,6 +103,7 @@ export default function MergedSections() {
                 Tests Daily
               </p>
             </div>
+
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
                 98.7%

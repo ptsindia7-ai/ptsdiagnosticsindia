@@ -3,7 +3,7 @@ export const trainingData = {
     type: "video",
     title: "iCan-3",
     desc:"Multi Monitoring Meter",
-    videoType: "file", //
+    videoType: "file", 
     videoUrl: "/videos/ican3.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
@@ -34,7 +34,7 @@ export const trainingData = {
     title: "A1CNOW+",
     desc:"CGM",
     videoType: "file", //
-    videoUrl: "/videos/ a1cnow.mp4",
+    videoUrl: "/videos/a1cnow.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
