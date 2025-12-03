@@ -8,54 +8,63 @@ export default function ProductCards() {
       sub: "Portable Automatic Multi-function Analyzer",
       img: "/products/p11.png",
       hoverImg: "/hover/icare2100-hover.png",
+      pdf: "/pdf/icare2100.pdf",
     },
     {
       name: "ican-I6",
       sub: "CGM",
       img: "/products/p2.png",
       hoverImg: "/hover/ican6-hover.png",
+      pdf: "/pdf/ican-i6.pdf",
     },
     {
       name: "ican-H6",
       sub: "CGM",
       img: "/products/p2.png",
       hoverImg: "/hover/icanh6-hover.png",
+      pdf: "/pdf/ican-h6.pdf",
     },
     {
       name: "KUG - 11",
       sub: "Multi Monitoring Meter",
       img: "/products/p3.png",
       hoverImg: "/hover/kug11-hover.png",
+      pdf: "/pdf/kug-11.pdf",
     },
     {
       name: "PH",
       sub: "Multi Monitoring Meter",
       img: "/products/p6.png",
       hoverImg: "/hover/pch50-hover.png",
+      pdf: "/pdf/ph.pdf",
     },
     {
       name: "PCH50",
       sub: "Multi Monitoring System",
       img: "/products/p7.png",
       hoverImg: "/hover/pch50-hover.png",
+      pdf: "/pdf/pch50.pdf",
     },
     {
       name: "icare - 1300",
       sub: "Portable Automatic Multi-function Analyzer",
       img: "/products/p8.png",
       hoverImg: "/hover/icare1300-hover.png",
+      pdf: "/pdf/icare1300.pdf",
     },
     {
       name: "Safe AQ Max 2",
       sub: "Blood Glucose Meter",
       img: "/products/p9.png",
       hoverImg: "/products/p4-hover.png",
+      pdf: "/pdf/safeaqmax2.pdf",
     },
     {
       name: "Safe AQ Max 3",
       sub: "Blood Glucose Meter",
       img: "/products/p10.png",
       hoverImg: "/products/p9-hover.png",
+      pdf: "/pdf/safeaqmax3.pdf",
     },
   ];
 
@@ -77,7 +86,7 @@ export default function ProductCards() {
           </a>
         </div>
       </section>
-      
+
       <section className="py-14 px-6 lg:px-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
           {products.map((product, index) => (
@@ -112,9 +121,14 @@ export default function ProductCards() {
                 </div>
 
                 {/* BUTTON */}
-                <button className="ml-auto bg-[#D7262D] text-white px-8 py-3 rounded-xl text-sm whitespace-nowrap hover:bg-[#b71f24] transition-all">
+                <a
+                  href={product.pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-auto bg-[#D7262D] text-white px-8 py-3 rounded-xl text-sm whitespace-nowrap hover:bg-[#b71f24] transition-all"
+                >
                   Know more
-                </button>
+                </a>
               </div>
             </div>
           ))}
