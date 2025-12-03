@@ -2,28 +2,28 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200">
       {/* TOP SECTION */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6 py-14">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-7 px-6 py-14">
 
         {/* COLUMN 1 — LOGO + TEXT + SOCIAL */}
-        <div>
+        <div className="pr-6">
           <img
             src="/images/pts-logo.svg"
             alt="PTS Diagnostics"
-            className="h-12 object-contain mb-5"
+            className="h-12 object-contain mb-6"
           />
 
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className="text-gray-600 leading-relaxed mb-8">
             We provide fast, accurate point-of-care diagnostics, empowering
             healthcare professionals to make quick decisions and improve patient
             outcomes.
           </p>
 
           {/* SOCIAL ICONS */}
-          <div className="flex gap-4">
-            <img src="/images/fb.svg" alt="Facebook" className="h-8 w-8 cursor-pointer" />
-            <img src="/images/insta.svg" alt="Instagram" className="h-8 w-8 cursor-pointer" />
-            <img src="/images/link.svg" alt="LinkedIn" className="h-8 w-8 cursor-pointer" />
-            <img src="/images/yt.svg" alt="YouTube" className="h-8 w-8 cursor-pointer" />
+          <div className="flex gap-5">
+            <img src="/images/fb.svg" alt="Facebook" className="h-10 w-10 cursor-pointer" />
+            <img src="/images/insta.svg" alt="Instagram" className="h-10 w-10 cursor-pointer" />
+            <img src="/images/link.svg" alt="LinkedIn" className="h-10 w-10 cursor-pointer" />
+            <img src="/images/yt.svg" alt="YouTube" className="h-10 w-10 cursor-pointer" />
           </div>
         </div>
 
