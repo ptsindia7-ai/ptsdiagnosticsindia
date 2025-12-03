@@ -52,12 +52,24 @@ export default function MergedSections() {
                   </h3>
                 </div>
 
-                <Link href={`/training/${slug}`}>
-                  <button className="bg-[#DF1931] text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
-                    <img src="/video.svg" className="w-4 h-4" />
-                    Video
-                  </button>
-                </Link>
+                {product.type === "video" ? (
+                  <Link href={`/training/${slug}`}>
+                    <button className="bg-[#DF1931] text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
+                      <img src="/images/play.svg" className="w-4 h-4" />
+                      Video
+                    </button>
+                  </Link>
+                ) : (
+                  <a
+                    href={product.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-[#DF1931] text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
+                      Know More
+                    </button>
+                  </a>
+                )}
               </div>
             </div>
           ))}

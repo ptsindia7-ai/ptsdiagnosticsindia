@@ -11,9 +11,10 @@ export default function Testimonials() {
     {
       rating: 5,
       time: "3 months",
-      text: "Immediate results from point-of-care testing helpus make quicker, informed decisions, enhancing overall care efficiency",
-      name: "Sara Lee,",
-      role: "Healthcare Operations Manager",
+      text: "Continuous insight for smarter diabetes care. See your glucose in real time and shape your health. Support proactive blood glucose management and improve quality of your life.",
+      name: "Kuntal Das,",
+      role: "Finance Manager",
+      image: "/testimonials/kunal-das.jpg",
     },
     {
       rating: 4,
@@ -21,6 +22,7 @@ export default function Testimonials() {
       text: "Our experience with point-of-care technology andchronic disease management enables us to take key learnings from multiple clients and build a plan that is achievable.",
       name: "Bridget Melland,",
       role: "Director of Corporate Accounts",
+      image: "/images/testimonials/bridget.png",
     },
     {
       rating: 5,
@@ -28,6 +30,7 @@ export default function Testimonials() {
       text: "Outcomes are the new income in many healthcaremodels, and point-of-care testing aligns perfectly by rapidly and accurately providing results in minutes instead of days",
       name: "Stephen Riendeau,",
       role: "Chief Commercial Officer",
+      image: "/images/testimonials/stephen.png",
     },
     {
       rating: 4,
@@ -35,6 +38,7 @@ export default function Testimonials() {
       text: "Immediate access to diagnostic results allows our teams to accelerate treatment planning, significantly reducing patient wait times and improving overall care flow.",
       name: "Sara Lee,",
       role: "Healthcare Operations Manager",
+      image: "/images/testimonials/sara.png",
     },
     {
       rating: 5,
@@ -42,6 +46,7 @@ export default function Testimonials() {
       text: "The integration of point-of-care technology has transformed our workflow, enabling physicians to make confident decisions without delays and enhancing the patient experience.",
       name: "Michael Carter,",
       role: "Senior Clinical Administrator",
+      image: "/images/testimonials/michael.png",
     },
   ];
 
@@ -60,7 +65,7 @@ export default function Testimonials() {
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-semibold mb-14">
-          What Our Partners Say
+          What Our Leaders Say
         </h2>
 
         <Swiper
@@ -86,7 +91,8 @@ export default function Testimonials() {
         >
           {testimonials.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white text-gray-800 p-8 rounded-[28px] shadow-lg min-h-[260px] flex flex-col justify-between text-left">
+              <div className="bg-white text-gray-800 p-8 rounded-[28px] shadow-lg min-h-[260px] flex flex-col justify-between text-left relative">
+
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex gap-1 text-[#DF1931] ">
                     {[...Array(item.rating)].map((_, i) => (
@@ -98,7 +104,7 @@ export default function Testimonials() {
                   <p className="text-gray-500 text-sm">{item.time}</p>
                 </div>
 
-                <p className="text-[15px] leading-relaxed text-gray-600">
+                <p className="text-[14px] leading-relaxed  text-gray-600">
                   {item.text}
                 </p>
 
@@ -106,6 +112,13 @@ export default function Testimonials() {
                   <p className="font-semibold text-gray-900">{item.name}</p>
                   <p className="text-sm text-gray-500">{item.role}</p>
                 </div>
+
+                {/* Profile Image Added */}
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-24 h-24 rounded-full absolute bottom-4 right-4 object-cover border-4 border-[#DF1931] shadow-sm"
+                />
               </div>
             </SwiperSlide>
           ))}

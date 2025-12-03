@@ -1,59 +1,35 @@
 export const trainingData = {
-  "ican3": {
+  ican3: {
+    type: "video",
     title: "iCan-3",
-    videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
+    videoType: "file", // 
+    videoUrl: "/videos/ican3.mp4",
+    // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
     description:
       "We are a global leader in innovative point-of-care diagnostic devices...",
     steps: [
-      { title: "Introduction", time: "3 min", start: 0 },
-      { title: "Setting up Analyzer", time: "6 min", start: 180 },
-      { title: "Install the Batteries", time: "6 min", start: 540 },
-      { title: "Set the Language", time: "6 min", start: 900 },
-      { title: "Set Date and Time", time: "6 min", start: 1260 },
-      { title: "Run a Check Strip Verification", time: "5 min", start: 1620 },
-      { title: "Run a Quality Control", time: "6 min", start: 1920 },
-      { title: "Prepare to Run A Patient Test", time: "6 min", start: 2280 },
-      { title: "Collect Sample for Lipid Panel Test Strip", time: "6 min", start: 2640 }
-    ]
+      { title: "Setting up App", time: "00:15", start: 15 },
+      { title: "Pairing", time: "00:46", start: 46 },
+      { title: "Cleaning", time: "01:12", start: 72 },
+      { title: "Applying Sensor", time: "01:37", start: 97 },
+      { title: "Inserting Sensor", time: "02:24", start: 144 },
+      { title: "Start & Warm Up", time: "02:47", start: 167 },
+      { title: "End Session", time: "03:17", start: 197 },
+    ],
   },
-  "ican6": {
-    title: "iCan-6",
-    videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
-    rating: 4.5,
-    reviews: 251,
-    description:
-      "We are a global leader in innovative point-of-care diagnostic devices...",
-    steps: [
-      { title: "Introduction", time: "3 min", start: 0 },
-      { title: "Setting up Analyzer", time: "6 min", start: 180 },
-      { title: "Install the Batteries", time: "6 min", start: 540 },
-      { title: "Set the Language", time: "6 min", start: 900 },
-      { title: "Set Date and Time", time: "6 min", start: 1260 },
-      { title: "Run a Check Strip Verification", time: "5 min", start: 1620 },
-      { title: "Run a Quality Control", time: "6 min", start: 1920 },
-      { title: "Prepare to Run A Patient Test", time: "6 min", start: 2280 },
-      { title: "Collect Sample for Lipid Panel Test Strip", time: "6 min", start: 2640 }
-    ]
+
+  ican6: {
+    type: "pdf", // <– PDF card
+    title: "iCan-I6",
+    pdf: "/pdfs/ureader.pdf", // <– PDF link
+    profile: "/people/xyz.png",
   },
-  "a1cnow": {
-    title: "iCan-3",
-    videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
-    rating: 4.5,
-    reviews: 251,
-    description:
-      "We are a global leader in innovative point-of-care diagnostic devices...",
-    steps: [
-      { title: "Introduction", time: "3 min", start: 0 },
-      { title: "Setting up Analyzer", time: "6 min", start: 180 },
-      { title: "Install the Batteries", time: "6 min", start: 540 },
-      { title: "Set the Language", time: "6 min", start: 900 },
-      { title: "Set Date and Time", time: "6 min", start: 1260 },
-      { title: "Run a Check Strip Verification", time: "5 min", start: 1620 },
-      { title: "Run a Quality Control", time: "6 min", start: 1920 },
-      { title: "Prepare to Run A Patient Test", time: "6 min", start: 2280 },
-      { title: "Collect Sample for Lipid Panel Test Strip", time: "6 min", start: 2640 }
-    ]
-  }
+
+  a1cnow: {
+    type: "pdf",
+    title: "A1CNOW+",
+    pdf: "/pdfs/analyzer-pro.pdf",
+  },
 };
