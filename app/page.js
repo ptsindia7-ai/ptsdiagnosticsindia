@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import ImageSlider from "./components/ImageSlider";
 import WhyChooseUs from "./components/WhyChooseUs";
 import UpcomingProducts from "./components/UpcomingProducts";
@@ -22,9 +22,11 @@ export default function MergedSections() {
             monitoring.
           </p>
 
-          <button className="mt-6 sm:mt-8 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium transition">
-            Explore Our Products
-          </button>
+          <Link href="/products">
+            <button className="mt-6 sm:mt-8 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium transition cursor-pointer">
+              Explore Our Products
+            </button>
+          </Link>
         </div>
 
         <ImageSlider />

@@ -1,9 +1,10 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200">
       {/* TOP SECTION */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-7 px-6 py-14">
-
         {/* COLUMN 1 — LOGO + TEXT + SOCIAL */}
         <div className="pr-6">
           <img
@@ -20,22 +21,50 @@ export default function Footer() {
 
           {/* SOCIAL ICONS */}
           <div className="flex gap-5">
-            <img src="/images/fb.svg" alt="Facebook" className="h-10 w-10 cursor-pointer" />
-            <img src="/images/insta.svg" alt="Instagram" className="h-10 w-10 cursor-pointer" />
-            <img src="/images/link.svg" alt="LinkedIn" className="h-10 w-10 cursor-pointer" />
-            <img src="/images/yt.svg" alt="YouTube" className="h-10 w-10 cursor-pointer" />
+            <img
+              src="/images/fb.svg"
+              alt="Facebook"
+              className="h-10 w-10 cursor-pointer"
+            />
+            <img
+              src="/images/insta.svg"
+              alt="Instagram"
+              className="h-10 w-10 cursor-pointer"
+            />
+            <img
+              src="/images/link.svg"
+              alt="LinkedIn"
+              className="h-10 w-10 cursor-pointer"
+            />
+            <img
+              src="/images/yt.svg"
+              alt="YouTube"
+              className="h-10 w-10 cursor-pointer"
+            />
           </div>
         </div>
 
         {/* COLUMN 2 — QUICK LINKS */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-800 mb-4">Quick Links</h3>
+          <h3 className="text-lg font-semibold text-gray-800 mb-4">
+            Quick Links
+          </h3>
           <ul className="text-gray-600 space-y-2">
-            <li>Home</li>
-            <li>About</li>
-            <li>Training</li>
-            <li>Products</li>
-            <li>Contact</li>
+            <li className="cursor-pointer">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link href="/about-us">About</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link href="/training">Training</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link href="/products">Products</Link>
+            </li>
+            <li className="cursor-pointer">
+              <Link href="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
 

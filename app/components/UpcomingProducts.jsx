@@ -39,8 +39,8 @@ export default function UpcomingProducts() {
         </div>
 
         <a
-          href="#"
-          className="bg-[#DF1931] text-white px-6 py-3 rounded-lg text-sm font-medium shadow hover:bg-[#C71528] transition"
+          href="/products"
+          className="bg-[#DF1931] text-white px-6 py-3 rounded-lg text-sm font-medium shadow hover:bg-[#C71528] transition cursor-pointer"
         >
           Explore Our Products
         </a>

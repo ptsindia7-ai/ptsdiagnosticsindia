@@ -4,7 +4,7 @@ import ImageSlider from "../components/ImageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import UpcomingProducts from "../components/UpcomingProducts";
 import WhyPartnerUs from "../components/WhyPartnerUs";
-import ImageSlider2 from "../components/ImageSlider2"
+import ImageSlider2 from "../components/ImageSlider2";
 
 export default function MergedSections() {
   return (
@@ -23,12 +23,14 @@ export default function MergedSections() {
             the right information at the right time to make the right decisions
           </p>
 
-          <button className="mt-6 sm:mt-8 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium">
-            Explore Our Products
-          </button>
+          <a href="/products">
+            <button className="mt-6 sm:mt-8 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium transition cursor-pointer">
+              Explore Our Products
+            </button>
+          </a>
         </div>
 
-      <ImageSlider2/>
+        <ImageSlider2 />
       </section>
 
       {/* WHO WE ARE */}
@@ -123,7 +125,8 @@ export default function MergedSections() {
         </h2>
 
         <p className="text-gray-600 text-center text-base sm:text-lg px-4">
-          From groundbreaking innovations to global milestones, our journey reflects a legacy of care and progress.
+          From groundbreaking innovations to global milestones, our journey
+          reflects a legacy of care and progress.
         </p>
 
         <div className="mt-10 flex justify-center overflow-x-auto px-4">
