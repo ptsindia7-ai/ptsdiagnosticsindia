@@ -87,45 +87,45 @@ export default function ProductCards() {
         </div>
       </section>
 
-      <section className="py-14 px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14">
+      <section className="py-10 px-4 sm:px-6 lg:px-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14">
           {products.map((product, index) => (
             <div key={index} className="flex flex-col group">
               {/* IMAGE CARD */}
-              <div className="w-full h-[350px] rounded-3xl flex items-center justify-center relative">
+              <div className="w-full h-[260px] sm:h-[300px] md:h-[350px] rounded-3xl flex items-center justify-center relative overflow-hidden">
                 {/* Default Image */}
                 <img
                   src={product.img}
                   alt={product.name}
-                  className="h-100 w-full object-contain transition-opacity duration-300 group-hover:opacity-0"
+                  className="w-full h-full object-contain transition-opacity duration-300 group-hover:opacity-0"
                 />
 
                 {/* Hover Image */}
                 <img
                   src={product.hoverImg}
                   alt={`${product.name}-hover`}
-                  className="h-100 w-full object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                  className="w-full h-full object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 />
               </div>
 
-              {/* TEXT + BUTTON (LOCKED LAYOUT) */}
-              <div className="mt-6 flex items-center justify-between w-full">
+              {/* TEXT + BUTTON */}
+              <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 {/* TEXT */}
-                <div className="max-w-[60%]">
-                  <h3 className="text-lg font-semibold text-gray-900 leading-tight">
+                <div className="w-full sm:w-auto">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
                     {product.name}
                   </h3>
-                  <p className="text-gray-500 text-sm leading-tight mt-1">
+                  <p className="text-gray-500 text-sm md:text-base mt-1 leading-tight">
                     {product.sub}
                   </p>
                 </div>
 
-                {/* BUTTON */}
+                {/* KNOW MORE BUTTON */}
                 <a
                   href={product.pdf}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-auto bg-[#D7262D] text-white px-8 py-3 rounded-xl text-sm whitespace-nowrap hover:bg-[#b71f24] transition-all"
+                  className="w-full sm:w-auto text-center bg-[#D7262D] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#b71f24] transition-all"
                 >
                   Know more
                 </a>
@@ -134,6 +134,7 @@ export default function ProductCards() {
           ))}
         </div>
       </section>
+
       <LetsTalk />
       <WhyPartnerUs />
     </>

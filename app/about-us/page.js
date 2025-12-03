@@ -4,6 +4,7 @@ import ImageSlider from "../components/ImageSlider";
 import WhyChooseUs from "../components/WhyChooseUs";
 import UpcomingProducts from "../components/UpcomingProducts";
 import WhyPartnerUs from "../components/WhyPartnerUs";
+import ImageSlider2 from "../components/ImageSlider2"
 
 export default function MergedSections() {
   return (
@@ -27,22 +28,7 @@ export default function MergedSections() {
           </button>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <img
-              src="about/abt-hero1.png"
-              className="w-full h-52 sm:h-64 object-cover rounded-[30px]"
-            />
-            <img
-              src="about/abt-hero2.png"
-              className="w-full h-52 sm:h-64 object-cover rounded-[30px]"
-            />
-            <img
-              src="about/abt-hero3.png"
-              className="w-full h-52 sm:h-64 object-cover rounded-[30px]"
-            />
-          </div>
-        </div>
+      <ImageSlider2/>
       </section>
 
       {/* WHO WE ARE */}

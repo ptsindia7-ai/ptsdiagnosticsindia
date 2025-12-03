@@ -2,6 +2,7 @@ export const trainingData = {
   ican3: {
     type: "video",
     title: "iCan-3",
+    desc:"Multi Monitoring Meter",
     videoType: "file", //
     videoUrl: "/videos/ican3.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
@@ -23,6 +24,7 @@ export const trainingData = {
   ican6: {
     type: "pdf", // <– PDF card
     title: "iCan-I6",
+    desc:"CGM",
     pdf: "/pdfs/ureader.pdf", // <– PDF link
     profile: "/people/xyz.png",
   },
@@ -30,6 +32,7 @@ export const trainingData = {
   a1cnow: {
     type: "video",
     title: "A1CNOW+",
+    desc:"CGM",
     videoType: "file", //
     videoUrl: "/videos/ a1cnow.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed

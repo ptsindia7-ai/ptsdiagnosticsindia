@@ -33,48 +33,60 @@ export default function MergedSections() {
         </div>
       </section>
 
-      <section className="w-full">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          {Object.entries(trainingData).map(([slug, product]) => (
-            <div key={slug} className="rounded-3xl p-6">
-              <div className="w-full h-[300px] rounded-3xl bg-white flex items-center justify-center mb-6">
-                <img
-                  src={`/products/${slug}.png`}
-                  alt={product.title}
-                  className="w-full h-full object-contain"
-                />
-              </div>
+      <section className="py-10 px-4 sm:px-6 lg:px-20 w-full">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14">
+    {Object.entries(trainingData).map(([slug, product]) => (
+      <div key={slug} className="flex flex-col group rounded-3xl">
 
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    {product.title}
-                  </h3>
-                </div>
-
-                {product.type === "video" ? (
-                  <Link href={`/training/${slug}`}>
-                    <button className="bg-[#DF1931] text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
-                      <img src="/images/play.svg" className="w-4 h-4" />
-                      Video
-                    </button>
-                  </Link>
-                ) : (
-                  <a
-                    href={product.pdf}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button className="bg-[#DF1931] text-white px-10 py-3 rounded-xl flex items-center gap-2 text-sm">
-                      Know More
-                    </button>
-                  </a>
-                )}
-              </div>
-            </div>
-          ))}
+        {/* IMAGE CARD */}
+        <div className="w-full h-[240px] sm:h-[280px] md:h-[320px] lg:h-[350px] rounded-3xl bg-white flex items-center justify-center relative overflow-hidden">
+          <img
+            src={`/products/${slug}.png`}
+            alt={product.title}
+            className="w-full h-full object-contain"
+          />
         </div>
-      </section>
+
+        {/* TEXT + BUTTON */}
+        <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 w-full">
+
+          {/* TEXT */}
+          <div className="w-full sm:w-auto">
+            <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
+              {product.title}
+            </h3>
+
+            {product.desc && (
+              <p className="text-gray-500 text-sm md:text-base mt-1 leading-tight">
+                {product.desc}
+              </p>
+            )}
+          </div>
+
+          {/* BUTTON */}
+          {product.type === "video" ? (
+            <Link
+              href={`/training/${slug}`}
+              className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all flex items-center justify-center gap-2"
+            >
+              <img src="/images/play.svg" className="w-4 h-4" />
+              Video
+            </Link>
+          ) : (
+            <a
+              href={product.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all"
+            >
+              Know More
+            </a>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
       <section className="relative w-full py-20">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
