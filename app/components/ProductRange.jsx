@@ -125,7 +125,7 @@ export default function ProductCarousel() {
       desc: "Lab-grade blood analyzer",
       labels: ["Dual testing", "ISO-certified"],
     },
-     {
+    {
       image: "/products/prod3.png",
       title: "ICan i3 CGM",
       desc: "Continuous Glucose Monitor",
@@ -154,7 +154,7 @@ export default function ProductCarousel() {
       </h2>
 
       {/* SLIDER */}
-      <div className="w-full px-2 sm:px-4 md:px-0">
+      <div className="w-full px-2 sm:px-4 md:px-0 h-[full] md:h-[300px] lg:h-[350px] flex items-start">
         <Swiper
           modules={[Navigation]}
           navigation={{
@@ -170,8 +170,9 @@ export default function ProductCarousel() {
           breakpoints={{
             480: { slidesPerView: 1.6, spaceBetween: 20 },
             640: { slidesPerView: 2.4, spaceBetween: 26 },
-            768: { slidesPerView: 3, spaceBetween: 30 },
-            1024: { slidesPerView: 5, spaceBetween: 36 },
+            768: { slidesPerView: 3.4, spaceBetween: 25 },
+            1024: { slidesPerView: 3.6, spaceBetween: 36 },
+            1200: { slidesPerView: 4.8, spaceBetween: 36 },
           }}
           className="max-w-[1400px] mx-auto"
         >
@@ -181,22 +182,38 @@ export default function ProductCarousel() {
             return (
               <SwiperSlide
                 key={index}
-                className="!w-[200px] sm:!w-[220px] md:!w-[240px] lg:!w-[260px] flex justify-center"
+                className={`transition-all duration-500 bg-white p-5 rounded-4xl ${
+                      isActive
+                        ? "sm:!w-[150px] md:!w-[250px] lg:!w-[310px] flex justify-center origin-bottom "
+                        : "sm:!w-[100px] md:!w-[200px] lg:!w-[250px] flex justify-center"
+                    }`}
               >
-                <div className="relative w-full h-[240px] sm:h-[260px] md:h-[300px] lg:h-[320px] flex items-center justify-center">
+                <div
+                  className={`
+                    relative w-full flex items-center justify-center 
+                    transition-all duration-500 
+                    ${
+                      isActive
+                        ? "scale-x-100 sm:h-[150px] md:h-[250px] lg:h-[310px] "
+                        : "scale-x-90 sm:h-[100px] md:h-[200px] lg:h-[250px] "
+                    }
+                  `}
+                >
                   {/* Outer product background card */}
                   <div className="w-full h-fullflex items-center justify-center overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="h-[75%] sm:h-[80%] object-contain"
+                      className="h-[80%] lg:h-[100%] object-contain"
                     />
                   </div>
 
                   {/* Info card only on active */}
                   {isActive && (
-                    <div className="absolute bottom-3 sm:bottom-8 left-1/2 -translate-x-1/2 bg-white rounded-2xl shadow-2xl 
-                      w-[80%] sm:w-[82%] px-3 py-2 sm:px-4 sm:py-3">
+                    <div
+                      className="absolute bottom-3 sm:bottom-8 left-1/2 -translate-x-1/2 translate-y-7 bg-white rounded-2xl shadow-2xl 
+                      w-[82%] lg:w-[100%] px-3 py-2 sm:px-4 sm:py-3"
+                    >
                       <div className="flex justify-between items-start gap-2">
                         <div>
                           <h3 className="text-[#D51827] font-semibold text-xs sm:text-sm">
@@ -220,6 +237,7 @@ export default function ProductCarousel() {
                             {label}
                           </span>
                         ))}
+                        <br/>
                         <span className="text-[8px] sm:text-[10px] text-gray-500">
                           and more
                         </span>
@@ -242,10 +260,10 @@ export default function ProductCarousel() {
         </div>
 
         <div className="flex gap-3 sm:gap-4">
-          <button className="product-prev-btn bg-white p-2 sm:p-3 rounded-full shadow-md">
+          <button className="product-prev-btn bg-white p-2 sm:p-3 rounded-full shadow-md cursor-pointer">
             <ArrowLeft />
           </button>
-          <button className="product-next-btn bg-white p-2 sm:p-3 rounded-full shadow-md">
+          <button className="product-next-btn bg-white p-2 sm:p-3 rounded-full shadow-md cursor-pointer">
             <ArrowRight />
           </button>
         </div>
@@ -253,5 +271,3 @@ export default function ProductCarousel() {
     </section>
   );
 }
-
-
