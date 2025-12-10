@@ -2,14 +2,14 @@ export const trainingData = {
   ican3: {
     type: "video",
     title: "iCan-3",
-    desc:"Multi Monitoring Meter",
-    videoType: "file", 
+    desc: "Multi Monitoring Meter",
+    videoType: "file",
     videoUrl: "/videos/ican3.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
     description:
-      "We are a global leader in innovative point-of-care diagnostic devices...",
+      "We are a global leader in innovative point-of-care diagnostic devices",
     steps: [
       { title: "Setting up App", time: "00:15", start: 15 },
       { title: "Pairing", time: "00:46", start: 46 },
@@ -24,7 +24,7 @@ export const trainingData = {
   ican6: {
     type: "pdf", // <– PDF card
     title: "iCan-I6",
-    desc:"CGM",
+    desc: "CGM",
     pdf: "/pdfs/ureader.pdf", // <– PDF link
     profile: "/people/xyz.png",
   },
@@ -32,14 +32,14 @@ export const trainingData = {
   a1cnow: {
     type: "video",
     title: "A1CNOW+",
-    desc:"CGM",
+    desc: "CGM",
     videoType: "file", //
     videoUrl: "/videos/a1cnow.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
     description:
-      "We are a global leader in innovative point-of-care diagnostic devices...",
+      "We are a global leader in innovative point-of-care diagnostic devices",
     steps: [
       { title: "Demonstration", time: "00:00", start: 0 },
       { title: "Blood Collector", time: "00:15", start: 15 },
@@ -50,27 +50,27 @@ export const trainingData = {
   aq1: {
     type: "video",
     title: "Safe AQ Max 1",
-    desc:"CGM",
+    desc: "CGM",
     videoType: "file", //
-    videoUrl: "/videos/a1cnow.mp4",
+    videoUrl: "/videos/aq1.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
     description:
-      "We are a global leader in innovative point-of-care diagnostic devices...",
+      "We are a global leader in innovative point-of-care diagnostic devices",
     steps: [
       { title: "Demonstration", time: "00:00", start: 0 },
-      { title: "Blood Collector", time: "00:15", start: 15 },
-      { title: "Running the test", time: "02:00", start: 120 },
-      { title: "End", time: "03:32", start: 213 },
+      { title: "Blood Collector", time: "00:24", start: 24 },
+      { title: "Running the test", time: "01:15", start: 75 },
+      { title: "End", time: "01:50", start: 110 },
     ],
   },
   aq2: {
     type: "video",
     title: "Safe AQ Max 2",
-    desc:"CGM",
+    desc: "CGM",
     videoType: "file", //
-    videoUrl: "/videos/a1cnow.mp4",
+    videoUrl: "/videos/aq2.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
@@ -78,17 +78,17 @@ export const trainingData = {
       "We are a global leader in innovative point-of-care diagnostic devices...",
     steps: [
       { title: "Demonstration", time: "00:00", start: 0 },
-      { title: "Blood Collector", time: "00:15", start: 15 },
-      { title: "Running the test", time: "02:00", start: 120 },
-      { title: "End", time: "03:32", start: 213 },
+      { title: "Blood Collector", time: "00:24", start: 24 },
+      { title: "Running the test", time: "01:15", start: 75 },
+      { title: "End", time: "01:50", start: 110 },
     ],
   },
   aq3: {
     type: "video",
     title: "Safe AQ Max 3",
-    desc:"CGM",
+    desc: "CGM",
     videoType: "file", //
-    videoUrl: "/videos/a1cnow.mp4",
+    videoUrl: "/videos/aq3.mp4",
     // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
     rating: 4.5,
     reviews: 251,
@@ -96,9 +96,9 @@ export const trainingData = {
       "We are a global leader in innovative point-of-care diagnostic devices...",
     steps: [
       { title: "Demonstration", time: "00:00", start: 0 },
-      { title: "Blood Collector", time: "00:15", start: 15 },
-      { title: "Running the test", time: "02:00", start: 120 },
-      { title: "End", time: "03:32", start: 213 },
+      { title: "Blood Collector", time: "00:24", start: 24 },
+      { title: "Running the test", time: "01:15", start: 75 },
+      { title: "End", time: "01:50", start: 110 },
     ],
   },
 };
