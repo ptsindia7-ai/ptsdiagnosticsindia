@@ -12,8 +12,9 @@ export default function MergedSections() {
         <div className="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           {/* LEFT TEXT BLOCK */}
           <div>
-            <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 leading-tight">
-              Product Training and <br /> Demonstrations
+            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-semibold text-gray-900 leading-tight">
+              Product Training and <br className="hidden sm:block" />{" "}
+              Demonstrations
             </h1>
 
             <p className="mt-3 text-gray-600 text-sm md:text-base">
@@ -34,59 +35,57 @@ export default function MergedSections() {
       </section>
 
       <section className="py-10 px-4 sm:px-6 lg:px-20 w-full">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14">
-    {Object.entries(trainingData).map(([slug, product]) => (
-      <div key={slug} className="flex flex-col group rounded-3xl">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14">
+          {Object.entries(trainingData).map(([slug, product]) => (
+            <div key={slug} className="flex flex-col group rounded-3xl">
+              {/* IMAGE CARD */}
+              <div className="w-full h-[240px] sm:h-[280px] md:h-[320px] lg:h-[350px] rounded-3xl bg-white flex items-center justify-center relative overflow-hidden">
+                <img
+                  src={`/products/${slug}.png`}
+                  alt={product.title}
+                  className="w-full h-full object-contain"
+                />
+              </div>
 
-        {/* IMAGE CARD */}
-        <div className="w-full h-[240px] sm:h-[280px] md:h-[320px] lg:h-[350px] rounded-3xl bg-white flex items-center justify-center relative overflow-hidden">
-          <img
-            src={`/products/${slug}.png`}
-            alt={product.title}
-            className="w-full h-full object-contain"
-          />
+              {/* TEXT + BUTTON */}
+              <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 w-full">
+                {/* TEXT */}
+                <div className="w-full sm:w-auto">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
+                    {product.title}
+                  </h3>
+
+                  {product.desc && (
+                    <p className="text-gray-500 text-sm md:text-base mt-1 leading-tight">
+                      {product.desc}
+                    </p>
+                  )}
+                </div>
+
+                {/* BUTTON */}
+                {product.type === "video" ? (
+                  <Link
+                    href={`/training/${slug}`}
+                    className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all flex items-center justify-center gap-2"
+                  >
+                    <img src="/images/play.svg" className="w-4 h-4" />
+                    Video
+                  </Link>
+                ) : (
+                  <a
+                    href={product.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all"
+                  >
+                    Know More
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
-
-        {/* TEXT + BUTTON */}
-        <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 w-full">
-
-          {/* TEXT */}
-          <div className="w-full sm:w-auto">
-            <h3 className="text-lg md:text-xl font-semibold text-gray-900 leading-tight">
-              {product.title}
-            </h3>
-
-            {product.desc && (
-              <p className="text-gray-500 text-sm md:text-base mt-1 leading-tight">
-                {product.desc}
-              </p>
-            )}
-          </div>
-
-          {/* BUTTON */}
-          {product.type === "video" ? (
-            <Link
-              href={`/training/${slug}`}
-              className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all flex items-center justify-center gap-2"
-            >
-              <img src="/images/play.svg" className="w-4 h-4" />
-              Video
-            </Link>
-          ) : (
-            <a
-              href={product.pdf}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all"
-            >
-              Know More
-            </a>
-          )}
-        </div>
-      </div>
-    ))}
-  </div>
-</section>
+      </section>
 
       <section className="relative w-full py-20">
         <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -95,7 +94,7 @@ export default function MergedSections() {
             <img
               src="/images/who.png"
               alt="Laboratory"
-              className="w-full h-[500px] object-cover rounded-[40px]"
+              className="w-full h-60 sm:h-64 md:h-80 lg:h-[500px] object-cover rounded-2xl sm:rounded-3xl lg:rounded-[40px]"
             />
           </div>
 

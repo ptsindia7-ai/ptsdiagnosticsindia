@@ -30,7 +30,7 @@ export default function UpcomingProducts() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div>
           <h3 className="text-sm text-[#DF1931] font-semibold flex items-center gap-1 uppercase tracking-wide">
-            Innovation 
+            Innovation
             <img src="/images/plus.svg" className="w-3 h-3" />
           </h3>
           <h2 className="text-3xl font-semibold mt-2 text-black">
@@ -40,7 +40,7 @@ export default function UpcomingProducts() {
 
         <a
           href="/products"
-          className="bg-[#DF1931] text-white px-6 py-3 rounded-lg text-sm font-medium shadow hover:bg-[#C71528] transition cursor-pointer"
+          className="hidden sm:inline-block bg-[#DF1931] text-white px-6 py-3 rounded-lg text-sm font-medium shadow hover:bg-[#C71528] transition cursor-pointer"
         >
           Explore Our Products
         </a>
@@ -50,9 +50,7 @@ export default function UpcomingProducts() {
       <div className="max-w-7xl mx-auto px-6 mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {products.map((item, i) => (
           <div key={i} className="flex flex-col items-center">
-            
             <div className="group w-full h-[260px] bg-white rounded-2xl flex items-center justify-center shadow-sm hover:shadow-md transition relative">
-              
               {/* Default Image */}
               <img
                 src={item.img}
@@ -71,6 +69,14 @@ export default function UpcomingProducts() {
             <p className="mt-4 text-gray-800 font-medium">{item.name}</p>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center sm:hidden">
+        <a
+          href="/products"
+          className="inline-block mt-6 bg-[#DF1931] text-white px-6 py-3 rounded-lg text-sm font-medium shadow hover:bg-[#C71528] transition cursor-pointer"
+        >
+          Explore Our Products
+        </a>
       </div>
     </section>
   );
