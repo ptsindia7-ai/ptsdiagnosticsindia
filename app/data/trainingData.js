@@ -47,4 +47,58 @@ export const trainingData = {
       { title: "End", time: "03:32", start: 213 },
     ],
   },
+  aq1: {
+    type: "video",
+    title: "Safe AQ Max 1",
+    desc:"CGM",
+    videoType: "file", //
+    videoUrl: "/videos/a1cnow.mp4",
+    // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
+    rating: 4.5,
+    reviews: 251,
+    description:
+      "We are a global leader in innovative point-of-care diagnostic devices...",
+    steps: [
+      { title: "Demonstration", time: "00:00", start: 0 },
+      { title: "Blood Collector", time: "00:15", start: 15 },
+      { title: "Running the test", time: "02:00", start: 120 },
+      { title: "End", time: "03:32", start: 213 },
+    ],
+  },
+  aq2: {
+    type: "video",
+    title: "Safe AQ Max 2",
+    desc:"CGM",
+    videoType: "file", //
+    videoUrl: "/videos/a1cnow.mp4",
+    // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
+    rating: 4.5,
+    reviews: 251,
+    description:
+      "We are a global leader in innovative point-of-care diagnostic devices...",
+    steps: [
+      { title: "Demonstration", time: "00:00", start: 0 },
+      { title: "Blood Collector", time: "00:15", start: 15 },
+      { title: "Running the test", time: "02:00", start: 120 },
+      { title: "End", time: "03:32", start: 213 },
+    ],
+  },
+  aq3: {
+    type: "video",
+    title: "Safe AQ Max 3",
+    desc:"CGM",
+    videoType: "file", //
+    videoUrl: "/videos/a1cnow.mp4",
+    // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
+    rating: 4.5,
+    reviews: 251,
+    description:
+      "We are a global leader in innovative point-of-care diagnostic devices...",
+    steps: [
+      { title: "Demonstration", time: "00:00", start: 0 },
+      { title: "Blood Collector", time: "00:15", start: 15 },
+      { title: "Running the test", time: "02:00", start: 120 },
+      { title: "End", time: "03:32", start: 213 },
+    ],
+  },
 };

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200">
       {/* TOP SECTION */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-7 px-6 py-14">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-7 px-6 py-10">
         {/* COLUMN 1 — LOGO + TEXT + SOCIAL */}
         <div className="pr-6">
           <img
@@ -82,15 +82,21 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Location</h3>
 
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          <p className="text-gray-600 mb-4">
+            Diagnostics India Private Limited, ADD-5th Flr, Office No. 5B2, Unit No. 3, &apos;D&apos; Wing, MBC Park, Kasarwadavli, Ghodbunder Road, Thane West - 400615.
           </p>
 
           <p className="text-[#DF1931] font-medium">Call us:</p>
-          <p className="text-gray-700 mb-4">000-000-0000</p>
+          <p className="text-gray-700 mb-1">022 - 4663259</p>
+          <p className="text-gray-700 mb-4">7530063636</p>
 
           <p className="text-[#DF1931] font-medium">Email us:</p>
-          <p className="text-gray-700">test@test.com</p>
+          <a
+            href="mailto:officesupport@sinocare.com"
+            className="text-gray-700 hover:text-[#DF1931] transition"
+          >
+            officesupport@sinocare.com
+          </a>
         </div>
       </div>
 
