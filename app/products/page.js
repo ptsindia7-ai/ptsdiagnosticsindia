@@ -35,7 +35,7 @@ export default function ProductCards() {
       name: "PH",
       sub: "Multi Monitoring Meter",
       img: "/products/p6.png",
-      hoverImg: "/hover/xyz.png",
+      hoverImg: "/products/p6.png",
       pdf: "/pdf/ph.pdf",
     },
     {
