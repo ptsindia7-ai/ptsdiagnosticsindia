@@ -93,16 +93,22 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Location</h3>
 
           <p className="text-gray-600 mb-4">
-            Diagnostics India Private Limited, ADD-5th Flr, Office No. 5B2, Unit
+            PTS Diagnostics India Pvt. Ltd., ADD-5th Flr, Office No. 5B2, Unit
             No. 3, &apos;D&apos; Wing, MBC Park, Kasarwadavli, Ghodbunder Road,
-            Thane West - 400615.
+            Thane West, Mumbai, Maharashtra – 400615.
           </p>
 
           <p className="text-[#DF1931] font-medium">Call us:</p>
-          <p className="text-gray-700 mb-1">022 - 4663259</p>
-          <p className="text-gray-700 mb-4">7530063636</p>
+          <div className="space-y-1">
+            <p className="text-gray-700">
+              <span className="font-medium">Office Landline:</span> 022-4663259
+            </p>
+            <p className="text-gray-700">
+              <span className="font-medium">Customer Service:</span> 7530063636
+            </p>
+          </div>
 
-          <p className="text-[#DF1931] font-medium">Email us:</p>
+          <p className="text-[#DF1931] font-medium mt-2">Email us:</p>
           <a
             href="mailto:officesupport@sinocare.com"
             className="text-gray-700 hover:text-[#DF1931] transition"
