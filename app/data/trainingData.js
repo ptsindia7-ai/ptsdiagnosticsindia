@@ -21,13 +21,13 @@ export const trainingData = {
     ],
   },
 
-  ican6: {
-    type: "pdf", // <– PDF card
-    title: "iCan-I6",
-    desc: "CGM",
-    pdf: "/pdfs/ureader.pdf", // <– PDF link
-    profile: "/people/xyz.png",
-  },
+  // ican6: {
+  //   type: "pdf", // <– PDF card
+  //   title: "iCan-I6",
+  //   desc: "CGM",
+  //   pdf: "/pdfs/ureader.pdf", // <– PDF link
+  //   profile: "/people/xyz.png",
+  // },
 
   a1cnow: {
     type: "video",
