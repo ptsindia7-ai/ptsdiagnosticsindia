@@ -5,6 +5,7 @@ import { trainingData } from "@/app/data/trainingData";
 import YouTube from "react-youtube";
 import { useState, useEffect } from "react";
 import WhyChooseUs from "../../components/WhyChooseUs";
+import Link from "next/link";
 import FormClient from "../../components/FormClient";
 
 export default function TrainingVideoPage() {
@@ -104,12 +105,17 @@ export default function TrainingVideoPage() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
-              <button className="bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm">
+              <Link
+                href="/contact"
+                className="inline-block bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm hover:bg-[#c31329] transition"
+              >
                 Contact Customer Service
-              </button>
-              <button className="border border-gray-400 text-gray-700 px-6 py-3 rounded-xl text-sm">
-                Visit Product Page
-              </button>
+              </Link>
+              <Link href="/products">
+                <button className="border border-gray-400 text-gray-700 px-6 py-3 rounded-xl text-sm hover:border-gray-600 hover:text-gray-900 transition">
+                  Visit Product Page
+                </button>
+              </Link>
             </div>
           </div>
 
