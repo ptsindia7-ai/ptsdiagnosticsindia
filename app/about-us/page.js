@@ -12,7 +12,7 @@ export default function MergedSections() {
       {/* HERO SECTION */}
       <section className="w-full bg-gradient-to-b from-white via-white to-red-50/30 pt-10 pb-10">
         <div className="max-w-5xl mx-auto text-center px-4 sm:px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-semibold text-gray-900 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 leading-tight">
             Innovating Point-of-Care with
             <br className="hidden md:block" />
             People, Technology, and Service

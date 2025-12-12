@@ -80,7 +80,7 @@ export default function ProductCards() {
       <section className="w-full py-16 px-6 md:px-12">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           {/* Left Heading */}
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900">
+          <h2 className="text-3xl sm:text-5xl md:text-4xl font-semibold text-gray-900 leading-tight">
             Our Products Across <br /> Healthcare Categories
           </h2>
 

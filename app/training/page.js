@@ -9,10 +9,10 @@ export default function MergedSections() {
   return (
     <>
       <section className="w-full py-16">
-        <div className="max-w-7xl mx-auto px-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           {/* LEFT TEXT BLOCK */}
           <div>
-            <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl font-semibold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-semibold text-gray-900 leading-tight">
               Product Training and <br className="hidden sm:block" />{" "}
               Demonstrations
             </h1>
