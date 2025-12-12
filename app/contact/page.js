@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LetsTalk from "../components/LetsTalk";
 import FormClient from "../components/FormClient";
+import JoinOurTeam from "../components/JoinOurTeam";
 
 export default function ConnectWithUs() {
   return (
@@ -105,60 +106,8 @@ export default function ConnectWithUs() {
               className="w-full h-48 sm:h-64 md:h-72 lg:h-[450px] object-cover rounded-2xl sm:rounded-3xl lg:rounded-[40px]"
             />
           </div>
-
-          <div>
-            <h4 className="text-[#DF1931] font-semibold text-sm flex items-center gap-2">
-              WHO WE ARE
-              <img src="/images/plus.svg" alt="" className="w-3" />
-            </h4>
-
-            <h2 className="text-3xl sm:text-4xl font-semibold mt-2 mb-6 sm:mb-8">
-              Be A Part of Our Team
-            </h2>
-
-            <form className="space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="bg-gray-100 rounded-md px-4 py-4 w-full"
-                />
-                <input
-                  type="text"
-                  placeholder="Whatsapp Number"
-                  className="bg-gray-100 rounded-md px-4 py-4 w-full"
-                />
-              </div>
-
-              <input
-                type="email"
-                placeholder="E-mail"
-                className="bg-gray-100 rounded-md px-4 py-4 w-full"
-              />
-
-              <input
-                type="text"
-                placeholder="Your Address"
-                className="bg-gray-100 rounded-md px-4 py-4 w-full"
-              />
-
-              <div className="bg-gray-100 rounded-md px-4 py-4 w-full flex items-center justify-between">
-                <span className="text-gray-500">Upload Resume</span>
-                <label className="text-[#DF1931] font-medium cursor-pointer">
-                  Upload File
-                  <input type="file" className="hidden" />
-                </label>
-              </div>
-
-              <button
-                type="submit"
-                className="bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-md font-medium hover:bg-red-700 transition flex items-center gap-2"
-              >
-                Send Message
-                <span className="text-xl">›</span>
-              </button>
-            </form>
-          </div>
+          <JoinOurTeam />
+        
         </div>
       </section>
     </>

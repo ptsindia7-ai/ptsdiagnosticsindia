@@ -1,15 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function LetsTalk() {
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null); // success | error | null
+
+  // ✅ AUTO-HIDE MESSAGE AFTER 4 SECONDS
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus(null);
+      }, 4000); // 4 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("FORM SUBMITTED");
-
     setLoading(true);
+    setStatus(null);
 
     try {
       const formData = {
@@ -20,25 +31,21 @@ export default function LetsTalk() {
         product: e.target.product.value,
       };
 
-      console.log("SENDING DATA:", formData);
-
       const res = await fetch("/api/sendMail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
-      console.log("RESPONSE STATUS:", res.status);
-
       if (res.ok) {
-        alert("Message sent successfully!");
+        setStatus("success");
         e.target.reset();
       } else {
-        alert("Failed to send message. Try again.");
+        setStatus("error");
       }
     } catch (err) {
-      console.error("FRONTEND ERROR:", err);
-      alert("Something went wrong");
+      console.error(err);
+      setStatus("error");
     }
 
     setLoading(false);
@@ -67,22 +74,60 @@ export default function LetsTalk() {
 
           <form onSubmit={handleSubmit} className="mt-8 space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <input name="name" type="text" placeholder="Full Name" className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none" required />
-              <input name="whatsapp" type="text" placeholder="Whatsapp Number" className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none" required />
+              <input
+                name="name"
+                placeholder="Full Name"
+                required
+                className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none"
+              />
+              <input
+                name="whatsapp"
+                placeholder="Whatsapp Number"
+                required
+                className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none"
+              />
             </div>
 
-            <input name="email" type="email" placeholder="E-mail" className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none" required />
-            <input name="address" type="text" placeholder="Your Address" className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none" />
-            <input name="product" type="text" placeholder="Product of Interest" className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none" />
+            <input
+              name="email"
+              type="email"
+              placeholder="E-mail"
+              required
+              className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none"
+            />
+
+            <input
+              name="address"
+              placeholder="Your Address"
+              className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none"
+            />
+
+            <input
+              name="product"
+              placeholder="Product of Interest"
+              className="w-full p-4 bg-[#F7F7F7] rounded-lg outline-none"
+            />
 
             <button
               type="submit"
               disabled={loading}
-              className="mt-4 bg-[#DF1931] text-white px-10 py-3 rounded-lg font-medium flex items-center gap-2 hover:bg-[#c31329] transition"
+              className="mt-4 bg-[#DF1931] text-white px-10 py-3 rounded-lg font-medium hover:bg-[#c31329] transition"
             >
               {loading ? "Sending..." : "Send Message"}
-              <span className="text-lg">›</span>
             </button>
+
+            {/* ✅ STATUS MESSAGE */}
+            {status === "success" && (
+              <p className="text-green-600 font-medium mt-3 transition-opacity duration-300">
+                Thank you! Your message has been sent successfully.
+              </p>
+            )}
+
+            {status === "error" && (
+              <p className="text-red-600 font-medium mt-3 transition-opacity duration-300">
+                Something went wrong. Please try again later.
+              </p>
+            )}
           </form>
         </div>
       </div>

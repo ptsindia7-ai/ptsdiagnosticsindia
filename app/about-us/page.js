@@ -5,7 +5,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import UpcomingProducts from "../components/UpcomingProducts";
 import WhyPartnerUs from "../components/WhyPartnerUs";
 import ImageSlider2 from "../components/ImageSlider2";
-import FormClient from "../components/FormClient";
+import LetsTalk from "../components/LetsTalk";
 
 export default function MergedSections() {
   return (

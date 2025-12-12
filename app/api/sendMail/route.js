@@ -24,7 +24,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: `"Diagnostics Website" <${process.env.MAIL_USER}>`,
-      to: "development@syspreedigital.com",
+      to: "officesupport@sinocare.com",
       replyTo: email,
       subject: `New Diagnostics Inquiry from ${name}`,
       html: `
