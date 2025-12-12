@@ -51,19 +51,29 @@ export default function Footer() {
           </h3>
           <ul className="text-gray-600 space-y-2">
             <li className="cursor-pointer">
-              <Link href="/">Home</Link>
+              <Link href="/" className="hover:text-red-600 transition">
+                Home
+              </Link>
             </li>
             <li className="cursor-pointer">
-              <Link href="/about-us">About</Link>
+              <Link href="/about-us" className="hover:text-red-600 transition">
+                About
+              </Link>
             </li>
             <li className="cursor-pointer">
-              <Link href="/training">Training</Link>
+              <Link href="/training" className="hover:text-red-600 transition">
+                Training
+              </Link>
             </li>
             <li className="cursor-pointer">
-              <Link href="/products">Products</Link>
+              <Link href="/products" className="hover:text-red-600 transition">
+                Products
+              </Link>
             </li>
             <li className="cursor-pointer">
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" className="hover:text-red-600 transition">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -83,7 +93,9 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-gray-800 mb-4">Location</h3>
 
           <p className="text-gray-600 mb-4">
-            Diagnostics India Private Limited, ADD-5th Flr, Office No. 5B2, Unit No. 3, &apos;D&apos; Wing, MBC Park, Kasarwadavli, Ghodbunder Road, Thane West - 400615.
+            Diagnostics India Private Limited, ADD-5th Flr, Office No. 5B2, Unit
+            No. 3, &apos;D&apos; Wing, MBC Park, Kasarwadavli, Ghodbunder Road,
+            Thane West - 400615.
           </p>
 
           <p className="text-[#DF1931] font-medium">Call us:</p>
