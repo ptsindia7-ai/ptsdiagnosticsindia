@@ -12,19 +12,19 @@ export default function ProductCards() {
       pdf: "/pdf/icare2100.pdf",
     },
     {
+      name: "ican-I3",
+      sub: "CGM",
+      img: "/products/ican3.png",
+      hoverImg: "/products/ican3.png",
+      pdf: "/pdf/ican-i6.pdf",
+    },
+    {
       name: "ican-I6",
       sub: "CGM",
       img: "/products/p2.png",
-      hoverImg: "/hover/ican6-hover.png",
-      pdf: "/pdf/ican-i6.pdf",
+      hoverImg: "/hover/icanh6-hover.png",
+      pdf: "/pdf/ican-h6.pdf",
     },
-    // {
-    //   name: "ican-H6",
-    //   sub: "CGM",
-    //   img: "/products/p2.png",
-    //   hoverImg: "/hover/icanh6-hover.png",
-    //   pdf: "/pdf/ican-h6.pdf",
-    // },
     {
       name: "KUG - 11",
       sub: "Multi Monitoring Meter",
