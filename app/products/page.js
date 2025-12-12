@@ -1,5 +1,6 @@
 import WhyPartnerUs from "../components/WhyPartnerUs";
 import LetsTalk from "../components/LetsTalk";
+import FormClient from "../components/FormClient";
 
 export default function ProductCards() {
   const products = [

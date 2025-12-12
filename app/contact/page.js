@@ -3,6 +3,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LetsTalk from "../components/LetsTalk";
+import FormClient from "../components/FormClient";
 
 export default function ConnectWithUs() {
   return (

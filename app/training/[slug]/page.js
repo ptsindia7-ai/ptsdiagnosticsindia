@@ -5,6 +5,7 @@ import { trainingData } from "@/app/data/trainingData";
 import YouTube from "react-youtube";
 import { useState, useEffect } from "react";
 import WhyChooseUs from "../../components/WhyChooseUs";
+import FormClient from "../../components/FormClient";
 
 export default function TrainingVideoPage() {
   const { slug } = useParams();
@@ -33,7 +34,6 @@ export default function TrainingVideoPage() {
       }
     });
   };
-
 
   const handleChapterClick = (start) => {
     if (player) player.seekTo(start, true);

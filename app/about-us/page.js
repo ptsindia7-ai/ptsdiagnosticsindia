@@ -5,6 +5,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import UpcomingProducts from "../components/UpcomingProducts";
 import WhyPartnerUs from "../components/WhyPartnerUs";
 import ImageSlider2 from "../components/ImageSlider2";
+import FormClient from "../components/FormClient";
 
 export default function MergedSections() {
   return (
@@ -275,58 +276,7 @@ export default function MergedSections() {
         </div>
       </section>
 
-      {/* LET’S TALK SECTION */}
-      <section className="relative w-full py-14 md:py-20">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-6 items-center">
-          <img
-            src="/images/who.png"
-            className="w-full h-[300px] sm:h-[500px] object-cover rounded-[40px]"
-          />
-
-          <div className="w-full">
-            <h3 className="text-sm font-semibold text-[#DF1931] uppercase flex items-center gap-2">
-              Who We Are <img src="/images/plus.svg" className="w-3" />
-            </h3>
-
-            <h2 className="text-3xl sm:text-4xl font-semibold mt-2">
-              Let’s Talk Diagnostics
-            </h2>
-
-            <form className="mt-8 space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input
-                  placeholder="Full Name"
-                  className="p-4 bg-[#F7F7F7] rounded-lg"
-                />
-                <input
-                  placeholder="Whatsapp Number"
-                  className="p-4 bg-[#F7F7F7] rounded-lg"
-                />
-              </div>
-              <input
-                placeholder="E-mail"
-                className="p-4 bg-[#F7F7F7] rounded-lg w-full"
-              />
-              <input
-                placeholder="Your Address"
-                className="p-4 bg-[#F7F7F7] rounded-lg w-full"
-              />
-              <input
-                placeholder="Product of Interest"
-                className="p-4 bg-[#F7F7F7] rounded-lg w-full"
-              />
-              <button className="bg-[#DF1931] text-white px-8 py-3 rounded-lg mt-2">
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-
-        <img
-          src="/images/vector2.png"
-          className="absolute bottom-0 right-0 w-28 sm:w-40"
-        />
-      </section>
+      <LetsTalk />
 
       <WhyPartnerUs />
     </>
