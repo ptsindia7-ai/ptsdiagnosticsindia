@@ -22,7 +22,7 @@ export default function ProductCards() {
       name: "iCan-I6",
       sub: "CGM",
       img: "/products/p2.png",
-      hoverImg: "/hover/icanh6-hover.png",
+      hoverImg: "/hover/ican6-hover.png",
       pdf: "/pdf/ican-h6.pdf",
     },
     {
