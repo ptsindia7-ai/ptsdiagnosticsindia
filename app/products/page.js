@@ -16,7 +16,7 @@ export default function ProductCards() {
       sub: "CGM",
       img: "/products/ican3.png",
       hoverImg: "/products/ican3.png",
-      // pdf: "/pdf/ican-i6.pdf",
+      pdf: "/pdf/ican-i3.pdf",
     },
     {
       name: "ican-I6",
