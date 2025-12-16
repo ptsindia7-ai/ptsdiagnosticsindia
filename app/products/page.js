@@ -23,7 +23,7 @@ export default function ProductCards() {
       sub: "CGM",
       img: "/products/p2.png",
       hoverImg: "/hover/ican6-hover.png",
-      pdf: "/pdf/ican-h6.pdf",
+      pdf: "/pdf/ican-i6.pdf",
     },
     {
       name: "KUG - 11",
