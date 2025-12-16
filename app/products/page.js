@@ -12,14 +12,14 @@ export default function ProductCards() {
       pdf: "/pdf/icare2100.pdf",
     },
     {
-      name: "ican-I3",
+      name: "iCan-I3",
       sub: "CGM",
       img: "/products/ican3.png",
       hoverImg: "/products/ican3.png",
       pdf: "/pdf/ican-i3.pdf",
     },
     {
-      name: "ican-I6",
+      name: "iCan-I6",
       sub: "CGM",
       img: "/products/p2.png",
       hoverImg: "/hover/icanh6-hover.png",
