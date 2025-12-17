@@ -26,7 +26,7 @@ export default function ConnectWithUs() {
 
           <div className="mt-8 md:mt-10">
             <a
-              href="/contact"
+              href="/contact#contact-form"
               className="bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg text-[15px] font-medium inline-block hover:bg-[#c61429] transition"
             >
               Contact Us
@@ -107,7 +107,6 @@ export default function ConnectWithUs() {
             />
           </div>
           <JoinOurTeam />
-        
         </div>
       </section>
     </>

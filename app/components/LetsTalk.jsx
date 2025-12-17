@@ -52,7 +52,7 @@ export default function LetsTalk() {
   };
 
   return (
-    <section className="relative w-full py-20">
+    <section id="contact-form" className="relative w-full py-20">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <img

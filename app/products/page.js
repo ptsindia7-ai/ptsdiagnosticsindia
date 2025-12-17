@@ -18,13 +18,13 @@ export default function ProductCards() {
       hoverImg: "/products/ican3.png",
       pdf: "/pdf/ican-i3.pdf",
     },
-    {
-      name: "iCan-I6",
-      sub: "CGM",
-      img: "/products/p2.png",
-      hoverImg: "/hover/ican6-hover.png",
-      pdf: "/pdf/ican-i6.pdf",
-    },
+    // {
+    //   name: "iCan-I6",
+    //   sub: "CGM",
+    //   img: "/products/p2.png",
+    //   hoverImg: "/hover/ican6-hover.png",
+    //   pdf: "/pdf/ican-i6.pdf",
+    // },
     {
       name: "KUG - 11",
       sub: "Multi Monitoring Meter",

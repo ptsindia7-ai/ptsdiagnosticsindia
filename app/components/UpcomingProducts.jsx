@@ -8,7 +8,7 @@ export default function UpcomingProducts() {
       hoverImg: "/images/palm-lab-hover.png",
     },
     {
-      name: "Ketone Meter",
+      name: "KUG-11",
       img: "/images/ketone.png",
       hoverImg: "/images/ketone-hover.png",
     },
@@ -21,6 +21,11 @@ export default function UpcomingProducts() {
       name: "Arm 30E+",
       img: "/images/arm.png",
       hoverImg: "/images/arm-hover.png",
+    },
+    {
+      name: "iCan-I6",
+      img: "/products/i6.png",
+      hoverImg: "/hover/ican6-hover.png",
     },
   ];
 

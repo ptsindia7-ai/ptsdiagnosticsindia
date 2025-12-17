@@ -99,49 +99,49 @@ export default function ProductCarousel() {
       image: "/products/prod1.png",
       title: "iCare Classic",
       desc: "Advanced Diabetes Monitoring Device",
-      labels: ["FDA-cleared", "Smart Alerts"],
+      // labels: ["FDA-cleared", "Smart Alerts"],
     },
     {
       image: "/products/prod2.png",
       title: "SinoCheck Blue",
       desc: "Accurate Glucose Meter",
-      labels: ["Fast Results", "Easy Use"],
+      // labels: ["Fast Results", "Easy Use"],
     },
     {
       image: "/products/prod3.png",
       title: "ICan i3 CGM",
       desc: "Continuous Glucose Monitor",
-      labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
+      // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
     },
     {
       image: "/products/prod4.png",
       title: "iTrack Mini",
       desc: "Portable Blood Sugar Tracker",
-      labels: ["Bluetooth", "App-connected"],
+      // labels: ["Bluetooth", "App-connected"],
     },
     {
       image: "/products/prod5.png",
       title: "Advanced Analyzer",
       desc: "Lab-grade blood analyzer",
-      labels: ["Dual testing", "ISO-certified"],
+      // labels: ["Dual testing", "ISO-certified"],
     },
     {
       image: "/products/prod3.png",
       title: "ICan i3 CGM",
       desc: "Continuous Glucose Monitor",
-      labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
+      // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
     },
     {
       image: "/products/prod4.png",
       title: "iTrack Mini",
       desc: "Portable Blood Sugar Tracker",
-      labels: ["Bluetooth", "App-connected"],
+      // labels: ["Bluetooth", "App-connected"],
     },
     {
       image: "/products/prod5.png",
       title: "Advanced Analyzer",
       desc: "Lab-grade blood analyzer",
-      labels: ["Dual testing", "ISO-certified"],
+      // labels: ["Dual testing", "ISO-certified"],
     },
   ];
 
@@ -228,7 +228,7 @@ export default function ProductCarousel() {
                         </button>
                       </div>
 
-                      <div className="flex flex-wrap gap-1 sm:gap-2 mt-2 sm:mt-3">
+                      {/* <div className="flex flex-wrap gap-1 sm:gap-2 mt-2 sm:mt-3">
                         {item.labels.map((label, i) => (
                           <span
                             key={i}
@@ -241,7 +241,7 @@ export default function ProductCarousel() {
                         <span className="text-[8px] sm:text-[10px] text-gray-500">
                           and more
                         </span>
-                      </div>
+                      </div> */}
                     </div>
                   )}
                 </div>
