@@ -5,7 +5,7 @@ export const trainingData = {
     desc: "Multi Monitoring Meter",
     videoType: "file",
     videoUrl: "/videos/ican3.mp4",
-    // videoId: "zpOULjyy-n8", // extract only ID from YouTube embed
+    // videoId: "zpOULjyy-n8", // extract only ID from YouTube em bed
     rating: 4.5,
     reviews: 251,
     description:
