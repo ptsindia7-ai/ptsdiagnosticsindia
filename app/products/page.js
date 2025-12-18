@@ -74,6 +74,21 @@ export default function ProductCards() {
       hoverImg: "/hover/aq3-hover.png",
       pdf: "/pdf/safeaqmax3.pdf",
     },
+     {
+      name: "Palm Lab",
+      img: "/images/palm.png",
+      hoverImg: "/images/palm-lab-hover.png",
+    },
+     {
+      name: "H101 & 102",
+      img: "/images/h101-copy.png",
+      hoverImg: "/images/h101-h.png",
+    },
+     {
+      name: "Arm 30E+",
+      img: "/images/arm30.png",
+      hoverImg: "/images/arm-hover.png",
+    },
   ];
 
   return (
