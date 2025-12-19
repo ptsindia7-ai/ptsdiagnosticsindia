@@ -89,6 +89,7 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -114,8 +115,9 @@ export default function ProductCarousel() {
       // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
     },
     {
-      image: "/products/prod4.png",
-      title: "iTrack Mini",
+      title: "Safe Accu",
+      sub: "Blood Glucose Meter",
+      image: "/images/safe-accu.png",
       desc: "Portable Blood Sugar Tracker",
       // labels: ["Bluetooth", "App-connected"],
     },
@@ -131,9 +133,10 @@ export default function ProductCarousel() {
       desc: "Continuous Glucose Monitor",
       // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
     },
-    {
-      image: "/products/prod4.png",
-      title: "iTrack Mini",
+     {
+      title: "Safe Accu",
+      sub: "Blood Glucose Meter",
+      image: "/images/safe-accu.png",
       desc: "Portable Blood Sugar Tracker",
       // labels: ["Bluetooth", "App-connected"],
     },
@@ -183,10 +186,10 @@ export default function ProductCarousel() {
               <SwiperSlide
                 key={index}
                 className={`transition-all duration-500 bg-white p-5 rounded-4xl ${
-                      isActive
-                        ? "sm:!w-[150px] md:!w-[250px] lg:!w-[310px] flex justify-center origin-bottom "
-                        : "sm:!w-[100px] md:!w-[200px] lg:!w-[250px] flex justify-center"
-                    }`}
+                  isActive
+                    ? "sm:!w-[150px] md:!w-[250px] lg:!w-[310px] flex justify-center origin-bottom "
+                    : "sm:!w-[100px] md:!w-[200px] lg:!w-[250px] flex justify-center"
+                }`}
               >
                 <div
                   className={`
@@ -254,9 +257,11 @@ export default function ProductCarousel() {
       {/* EXPLORE BUTTON + ARROWS */}
       <div className="flex items-center justify-between max-w-[1400px] mx-auto mt-12 md:mt-16 px-4">
         <div className="flex flex-1 justify-center">
-          <button className="bg-white text-[#D51827] font-semibold px-8 py-2 sm:px-10 sm:py-3 rounded-xl shadow-md text-sm sm:text-base">
-            Explore More
-          </button>
+          <Link href="/products">
+            <button className="bg-white text-[#D51827] font-semibold px-8 py-2 sm:px-10 sm:py-3 rounded-xl shadow-md text-sm sm:text-base cursor-pointer">
+              Explore More
+            </button>
+          </Link>
         </div>
 
         <div className="flex gap-3 sm:gap-4">

@@ -74,20 +74,52 @@ export default function ProductCards() {
       hoverImg: "/hover/aq3-hover.png",
       pdf: "/pdf/safeaqmax3.pdf",
     },
-     {
+    {
       name: "Palm Lab",
+      sub: "Blood Glucose Meter",
       img: "/images/palm.png",
       hoverImg: "/images/palm-lab-hover.png",
     },
-     {
+    {
       name: "H101 & 102",
+      sub: "Blood Glucose Meter",
       img: "/images/h101-copy.png",
       hoverImg: "/images/h101-h.png",
+       pdf: "/pdf/h101.pdf",
     },
-     {
+    {
       name: "Arm 30E+",
+      sub: "Blood Glucose Meter",
       img: "/images/arm30.png",
       hoverImg: "/images/arm-hover.png",
+    },
+    {
+      name: "Safe AQ UG",
+      sub: "Blood Glucose Meter",
+      img: "/images/safe-aq-ug.png",
+      hoverImg: "/images/safe-aq-ug.png",
+      pdf: "/pdf/safe-aq-ug.pdf",
+    },
+    {
+      name: "Safe AQ Smart",
+      sub: "Blood Glucose Meter",
+      img: "/images/safe-aq-smart.png",
+      hoverImg: "/images/safe-aq-smart.png",
+      pdf: "/pdf/safe-aq-smart.pdf",
+    },
+    {
+      name: "Safe AQ Angel",
+      sub: "Blood Glucose Meter",
+      img: "/images/safe-aq-angel.png",
+      hoverImg: "/images/safe-aq-angel.png",
+      pdf: "/pdf/safe-aq-angel.pdf",
+    },
+    {
+      name: "Safe Accu",
+      sub: "Blood Glucose Meter",
+      img: "/images/safe-accu.png",
+      hoverImg: "/images/safe-accu.png",
+      pdf: "/pdf/safe-accu.pdf",
     },
   ];
 
