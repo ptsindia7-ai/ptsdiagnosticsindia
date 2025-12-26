@@ -85,7 +85,7 @@ export default function ProductCards() {
       sub: "Blood Glucose Meter",
       img: "/images/h101-copy.png",
       hoverImg: "/images/h101-h.png",
-       pdf: "/pdf/h101.pdf",
+      pdf: "/pdf/h101.pdf",
     },
     {
       name: "Arm 30E+",
@@ -177,7 +177,7 @@ export default function ProductCards() {
 
                 {/* KNOW MORE BUTTON */}
                 <a
-                  href={product.pdf}
+                  href={`${product.pdf}#toolbar=0&navpanes=0&scrollbar=0`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto text-center bg-[#D7262D] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#b71f24] transition-all"
