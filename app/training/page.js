@@ -65,7 +65,7 @@ export default function MergedSections() {
                 {/* BUTTON */}
                 {product.type === "video" ? (
                   <Link
-                    href={`/training/${slug}`}
+                    href={`/training/${slug}?`}
                     className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all flex items-center justify-center gap-2"
                   >
                     <img src="/images/play.svg" className="w-4 h-4" />

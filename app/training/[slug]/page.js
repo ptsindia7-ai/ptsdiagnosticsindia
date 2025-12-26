@@ -54,6 +54,7 @@ export default function TrainingVideoPage() {
             {product.videoType === "file" ? (
               <video
                 controls
+                controlsList="nodownload noplaybackrate"
                 className="w-full rounded-xl"
                 onTimeUpdate={(e) => {
                   const time = e.target.currentTime;
