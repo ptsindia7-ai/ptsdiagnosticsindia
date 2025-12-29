@@ -163,7 +163,7 @@ export default function TrainingVideoPage() {
           </p>
 
           <a
-            href={product.pdf}
+            href={`${product.pdf}#toolbar=0&navpanes=0&scrollbar=0`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#DF1931] text-white px-10 py-4 rounded-xl inline-block"

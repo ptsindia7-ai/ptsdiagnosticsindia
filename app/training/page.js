@@ -73,7 +73,7 @@ export default function MergedSections() {
                   </Link>
                 ) : (
                   <a
-                    href={product.pdf}
+                    href={`${product.pdf}#toolbar=0&navpanes=0&scrollbar=0`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto text-center bg-[#DF1931] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#c5162a] transition-all"

@@ -98,21 +98,24 @@ export default function ProductCarousel() {
   const products = [
     {
       image: "/products/prod1.png",
-      title: "iCare Classic",
+      title: "Safe AQ Smart",
       desc: "Advanced Diabetes Monitoring Device",
+      pdf: "/pdf/safe-aq-smart.pdf",
       // labels: ["FDA-cleared", "Smart Alerts"],
     },
     {
       image: "/products/prod2.png",
-      title: "SinoCheck Blue",
+      title: "Safe AQ UG",
       desc: "Accurate Glucose Meter",
       // labels: ["Fast Results", "Easy Use"],
+       pdf: "/pdf/safe-aq-ug.pdf",
     },
     {
       image: "/products/prod3.png",
       title: "ICan i3 CGM",
       desc: "Continuous Glucose Monitor",
       // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
+       pdf: "/pdf/ican-i3.pdf",
     },
     {
       title: "Safe Accu",
@@ -120,31 +123,36 @@ export default function ProductCarousel() {
       image: "/images/safe-accu.png",
       desc: "Portable Blood Sugar Tracker",
       // labels: ["Bluetooth", "App-connected"],
+       pdf: "/pdf/safe-accu.pdf",
     },
     {
       image: "/products/prod5.png",
-      title: "Advanced Analyzer",
+      title: "ICare- 2100",
       desc: "Lab-grade blood analyzer",
       // labels: ["Dual testing", "ISO-certified"],
+       pdf: "/pdf/icare2100.pdf",
     },
     {
       image: "/products/prod3.png",
       title: "ICan i3 CGM",
       desc: "Continuous Glucose Monitor",
       // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
+       pdf: "/pdf/ican-i3.pdf",
     },
-     {
+    {
       title: "Safe Accu",
       sub: "Blood Glucose Meter",
       image: "/images/safe-accu.png",
       desc: "Portable Blood Sugar Tracker",
       // labels: ["Bluetooth", "App-connected"],
+       pdf: "/pdf/safe-accu.pdf",
     },
     {
       image: "/products/prod5.png",
-      title: "Advanced Analyzer",
+      title: "ICare- 2100",
       desc: "Lab-grade blood analyzer",
       // labels: ["Dual testing", "ISO-certified"],
+       pdf: "/pdf/icare2100.pdf",
     },
   ];
 
@@ -226,9 +234,15 @@ export default function ProductCarousel() {
                             {item.desc}
                           </p>
                         </div>
-                        <button className="bg-[#D51827] text-white w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center">
-                          <ArrowRight size={12} />
-                        </button>
+                        <a
+                          href={`${item.pdf}#toolbar=0&navpanes=0&scrollbar=0`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <button className="bg-[#D51827] text-white w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center">
+                            <ArrowRight size={12} />
+                          </button>
+                        </a>
                       </div>
 
                       {/* <div className="flex flex-wrap gap-1 sm:gap-2 mt-2 sm:mt-3">
