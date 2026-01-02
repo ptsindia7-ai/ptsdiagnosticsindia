@@ -13,6 +13,8 @@ export default function Navbar() {
     { name: "Training", href: "/training" },
     { name: "About us", href: "/about-us" },
     { name: "Products", href: "/products" },
+    { name: "Events", href: "https://syspreesolutions.com/pts-careers/blogs/" },
+    { name: "Careers", href: "https://syspreesolutions.com/pts-careers/" },
     { name: "Contact", href: "/contact" },
   ];
 

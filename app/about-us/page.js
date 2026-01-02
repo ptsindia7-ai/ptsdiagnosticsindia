@@ -132,7 +132,7 @@ export default function MergedSections() {
 
         <div className="mt-10 flex justify-center overflow-x-auto px-4">
           <img
-            src="/images/journey.png"
+            src="/images/journey.jpg"
             className="max-w-full h-auto object-contain"
           />
         </div>
