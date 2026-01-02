@@ -69,7 +69,7 @@ export default function Navbar() {
 
         {/* RIGHT LOGO */}
         <img
-          src="/images/pts-logo.svg"
+          src="/pts-logo.png"
           alt="PTS Diagnostics Logo"
           className="h-12 object-contain hidden lg:block"
         />
