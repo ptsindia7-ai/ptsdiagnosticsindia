@@ -69,7 +69,7 @@ export default function LetsTalk() {
           </h3>
 
           <h2 className="text-4xl font-semibold text-black mt-2">
-            Let’s Talk Diagnostics
+            Let’s Connect
           </h2>
 
           <form onSubmit={handleSubmit} className="mt-8 space-y-4">

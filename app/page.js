@@ -48,7 +48,7 @@ export default function MergedSections() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-0">
             <div>
               <h3 className="text-4xl sm:text-5xl md:text-6xl font-semibold">
-                135+
+                187+
               </h3>
               <p className="text-sm sm:text-lg md:text-xl mt-2 opacity-90">
                 Countries
@@ -60,7 +60,7 @@ export default function MergedSections() {
                 2.5M+
               </h3>
               <p className="text-sm sm:text-lg md:text-xl mt-2 opacity-90">
-                Devices Deployed
+                Users Worldwide
               </p>
             </div>
 
@@ -104,7 +104,7 @@ export default function MergedSections() {
 
           <div>
             <p className="text-[#DF1931] font-semibold tracking-wide flex items-center gap-2">
-              WHO WE ARE <img src="images/plus.svg" className="w-4" />
+              WHO YOU ARE <img src="images/plus.svg" className="w-4" />
             </p>
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mt-3 leading-snug">
@@ -118,9 +118,9 @@ export default function MergedSections() {
               faster, more informed decisions—right at the point of care.
             </p>
 
-            <button className="mt-5 sm:mt-7 bg-[#DF1931] text-white px-6 sm:px-7 py-3 rounded-lg font-medium">
+            {/* <button className="mt-5 sm:mt-7 bg-[#DF1931] text-white px-6 sm:px-7 py-3 rounded-lg font-medium">
               Know More
-            </button>
+            </button> */}
           </div>
         </div>
       </section>

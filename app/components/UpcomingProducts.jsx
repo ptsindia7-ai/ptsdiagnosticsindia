@@ -18,12 +18,12 @@ export default function UpcomingProducts() {
       hoverImg: "/images/h101-hover.png",
     },
     {
-      name: "Arm 30E+",
+      name: "ARM 30E+",
       img: "/images/arm.png",
       hoverImg: "/images/arm-hover.png",
     },
     {
-      name: "iCan-I6",
+      name: "iCan-i6",
       img: "/products/i6.png",
       hoverImg: "/hover/ican6-hover.png",
     },

@@ -112,7 +112,7 @@ export default function ProductCarousel() {
     },
     {
       image: "/products/prod3.png",
-      title: "ICan i3 CGM",
+      title: "iCan - i3 CGM",
       desc: "Continuous Glucose Monitor",
       // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
        pdf: "/pdf/ican-i3.pdf",
@@ -127,14 +127,14 @@ export default function ProductCarousel() {
     },
     {
       image: "/products/prod5.png",
-      title: "ICare- 2100",
+      title: "iCARE - 2100",
       desc: "Lab-grade blood analyzer",
       // labels: ["Dual testing", "ISO-certified"],
        pdf: "/pdf/icare2100.pdf",
     },
     {
       image: "/products/prod3.png",
-      title: "ICan i3 CGM",
+      title: "iCan - i3 CGM",
       desc: "Continuous Glucose Monitor",
       // labels: ["FDA-cleared", "CLIA-waived", "CE-marked", "IFCC - traceable"],
        pdf: "/pdf/ican-i3.pdf",
@@ -149,7 +149,7 @@ export default function ProductCarousel() {
     },
     {
       image: "/products/prod5.png",
-      title: "ICare- 2100",
+      title: "iCARE - 2100",
       desc: "Lab-grade blood analyzer",
       // labels: ["Dual testing", "ISO-certified"],
        pdf: "/pdf/icare2100.pdf",

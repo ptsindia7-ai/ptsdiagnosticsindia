@@ -5,21 +5,21 @@ import FormClient from "../components/FormClient";
 export default function ProductCards() {
   const products = [
     {
-      name: "ICare- 2100",
+      name: "iCARE - 2100",
       sub: "Portable Automatic Multi-function Analyzer",
       img: "/products/p11.png",
       hoverImg: "/hover/icare2100-hover.png",
       pdf: "/pdf/icare2100.pdf",
     },
     {
-      name: "iCan-I3",
+      name: "iCan - i3",
       sub: "CGM",
       img: "/products/ican3.png",
       hoverImg: "/products/ican3.png",
       pdf: "/pdf/ican-i3.pdf",
     },
     // {
-    //   name: "iCan-I6",
+    //   name: "iCan-i6",
     //   sub: "CGM",
     //   img: "/products/p2.png",
     //   hoverImg: "/hover/ican6-hover.png",
@@ -47,7 +47,7 @@ export default function ProductCards() {
       pdf: "/pdf/pch50.pdf",
     },
     {
-      name: "icare - 1300",
+      name: "iCARE - 1300",
       sub: "Portable Automatic Multi-function Analyzer",
       img: "/products/p8.png",
       hoverImg: "/hover/icare-hover.png",
@@ -88,7 +88,7 @@ export default function ProductCards() {
       pdf: "/pdf/h101.pdf",
     },
     {
-      name: "Arm 30E+",
+      name: "ARM 30E+",
       sub: "Blood Glucose Meter",
       img: "/images/arm30.png",
       hoverImg: "/images/arm-hover.png",

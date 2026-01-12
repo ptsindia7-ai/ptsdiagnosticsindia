@@ -1,7 +1,7 @@
 export const trainingData = {
   ican3: {
     type: "video",
-    title: "iCan-I3",
+    title: "iCan - i3",
     desc: "Multi Monitoring Meter",
     videoType: "file",
     videoUrl: "/videos/ican3.mp4",

@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* LEFT LOGO */}
         <Link href="/">
           <img
-            src="/images/sinocare-logo.svg"
+            src="/images/sinocare-logo.jpg"
             alt="Sinocare Logo"
             className="h-12 object-contain"
           />
