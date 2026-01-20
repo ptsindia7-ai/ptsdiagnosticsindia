@@ -98,7 +98,7 @@ export default function MergedSections() {
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-4 sm:px-6 md:px-10 relative z-10">
           <img
-            src="images/who.png"
+            src="images/who.jpg"
             className="w-full h-[300px] sm:h-[450px] md:h-[500px] object-cover rounded-3xl"
           />
 
