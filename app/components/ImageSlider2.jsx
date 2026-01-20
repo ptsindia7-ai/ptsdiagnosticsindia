@@ -13,7 +13,6 @@ export default function ThreeImageLayout() {
     "about/abt-hero4.jpg",
     "about/abt-hero5.jpg",
     "about/abt-hero6.jpg",
-    "about/abt-hero7.jpg",
     "about/abt-hero8.jpg",
   ];
 
