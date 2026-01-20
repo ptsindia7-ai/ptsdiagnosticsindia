@@ -1,7 +1,7 @@
 export const trainingData = {
   ican3: {
     type: "video",
-    title: "iCan - i3",
+    title: "iCan - i3 CGM",
     desc: "Multi Monitoring Meter",
     videoType: "file",
     videoUrl: "/videos/ican3.mp4",
@@ -41,7 +41,7 @@ export const trainingData = {
   },
   aq1: {
     type: "video",
-    title: "Safe AQ Max 1",
+    title: "Safe AQ Max I",
     desc: "CGM",
     videoType: "file", //
     videoUrl: "/videos/aq1.mp4",
@@ -59,7 +59,7 @@ export const trainingData = {
   },
   aq2: {
     type: "video",
-    title: "Safe AQ Max 2",
+    title: "Safe AQ Max II",
     desc: "CGM",
     videoType: "file", //
     videoUrl: "/videos/aq2.mp4",
@@ -77,7 +77,7 @@ export const trainingData = {
   },
   aq3: {
     type: "video",
-    title: "Safe AQ Max 3",
+    title: "Safe AQ Max III",
     desc: "CGM",
     videoType: "file", //
     videoUrl: "/videos/aq3.mp4",

@@ -7,7 +7,6 @@ import "swiper/css";
 
 export default function ThreeImageLayout() {
   const images = [
-    "about/abt-hero1.png",
     "about/abt-hero2.png",
     "about/abt-hero3.png",
     "about/abt-hero4.jpg",

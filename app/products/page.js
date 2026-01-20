@@ -12,7 +12,7 @@ export default function ProductCards() {
       pdf: "/pdf/icare2100.pdf",
     },
     {
-      name: "iCan - i3",
+      name: "iCan - i3 CGM",
       sub: "CGM",
       img: "/products/ican3.png",
       hoverImg: "/products/ican3.png",
@@ -54,21 +54,21 @@ export default function ProductCards() {
       pdf: "/pdf/icare1300.pdf",
     },
     {
-      name: "Safe AQ Max 1",
+      name: "Safe AQ Max I",
       sub: "Blood Glucose Meter",
       img: "/products/p9.png",
       hoverImg: "/hover/aq1-hover.png",
       pdf: "/pdf/safeaqmax1.pdf",
     },
     {
-      name: "Safe AQ Max 2",
+      name: "Safe AQ Max II",
       sub: "Blood Glucose Meter",
       img: "/products/p9.png",
       hoverImg: "/hover/aq2-hover.png",
       pdf: "/pdf/safeaqmax2.pdf",
     },
     {
-      name: "Safe AQ Max 3",
+      name: "Safe AQ Max III",
       sub: "Blood Glucose Meter",
       img: "/products/p9.png",
       hoverImg: "/hover/aq3-hover.png",
@@ -115,7 +115,7 @@ export default function ProductCards() {
       pdf: "/pdf/safe-aq-angel.pdf",
     },
     {
-      name: "Safe Accu",
+      name: "Safe-Accu",
       sub: "Blood Glucose Meter",
       img: "/images/safe-accu.png",
       hoverImg: "/images/safe-accu.png",

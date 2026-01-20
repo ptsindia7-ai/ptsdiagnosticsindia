@@ -48,16 +48,17 @@ export default function MergedSections() {
             </h2>
 
             <p className="text-gray-600 mt-5 leading-relaxed text-base text-justify sm:text-lg">
-              PTS Diagnostics is an innovative point-of-care diagnostics
-              solutions provider dedicated to empowering both patients and
-              healthcare professionals. Our name represents the three pillars
-              that drive our long-term success: People, Technology, and Service.
-              Headquartered in Whitestown, Indiana, we design, manufacture, and
-              market solutions that serve healthcare providers and patients
-              across hundreds of countries worldwide. With facilities in
-              Indianapolis, IN, and Sunnyvale, CA, plus sales offices in North
-              America, Europe, Latin America, and the Pacific Rim, our reach is
-              truly global.
+              PTS Diagnostics India Pvt Ltd is a proud subsidiary of Sinocare
+              Inc., a world leading diabetes digital management expert. This
+              strategic partnership, established through acquisition, combines
+              Sinocare's extensive R&D capabilities, manufacturing excellence,
+              and worldwide distribution network with PTS's deep expertise and
+              strong presence in the Indian healthcare market. Together, we are
+              committed to providing high-quality, innovative, and accessible
+              medical devices to improve health outcomes across India and
+              beyond. This synergy ensures that PTS delivers trusted,
+              cutting-edge technology backed by Sinocare's international reach
+              and proven industry leadership
             </p>
 
             {/* <button className="mt-6 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium">

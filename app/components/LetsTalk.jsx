@@ -64,7 +64,7 @@ export default function LetsTalk() {
 
         <div className="w-full">
           <h3 className="text-sm font-semibold text-[#DF1931] uppercase flex items-center gap-2">
-            Who We Are
+            Contact Us
             <img src="/images/plus.svg" alt="plus" className="w-3 h-3" />
           </h3>
 

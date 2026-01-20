@@ -53,7 +53,7 @@ export default function JoinOurTeam() {
   return (
     <div>
       <h4 className="text-[#DF1931] font-semibold text-sm flex items-center gap-2">
-        WHO WE ARE
+        Lets's Connect
         <img src="/images/plus.svg" alt="" className="w-3" />
       </h4>
 

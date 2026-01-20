@@ -102,7 +102,7 @@ export default function MergedSections() {
           <div className="w-full">
             {/* Small Heading */}
             <h3 className="text-sm font-semibold text-[#DF1931] uppercase flex items-center gap-2">
-              Who We Are
+              Let’s Connect
               <img src="/images/plus.svg" alt="plus" className="w-3 h-3" />
             </h3>
 

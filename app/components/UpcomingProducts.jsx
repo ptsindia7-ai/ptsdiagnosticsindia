@@ -23,7 +23,7 @@ export default function UpcomingProducts() {
       hoverImg: "/images/arm-hover.png",
     },
     {
-      name: "iCan-i6",
+      name: "iCan-i6 CGM",
       img: "/products/i6.png",
       hoverImg: "/hover/ican6-hover.png",
     },

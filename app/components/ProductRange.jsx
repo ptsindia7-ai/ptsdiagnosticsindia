@@ -118,7 +118,7 @@ export default function ProductCarousel() {
        pdf: "/pdf/ican-i3.pdf",
     },
     {
-      title: "Safe Accu",
+      title: "Safe-Accu",
       sub: "Blood Glucose Meter",
       image: "/images/safe-accu.png",
       desc: "Portable Blood Sugar Tracker",
@@ -140,7 +140,7 @@ export default function ProductCarousel() {
        pdf: "/pdf/ican-i3.pdf",
     },
     {
-      title: "Safe Accu",
+      title: "Safe-Accu",
       sub: "Blood Glucose Meter",
       image: "/images/safe-accu.png",
       desc: "Portable Blood Sugar Tracker",
