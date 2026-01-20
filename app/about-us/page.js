@@ -47,7 +47,7 @@ export default function MergedSections() {
               Who We Are
             </h2>
 
-            <p className="text-gray-600 mt-5 leading-relaxed text-base sm:text-lg">
+            <p className="text-gray-600 mt-5 leading-relaxed text-base text-justify sm:text-lg">
               PTS Diagnostics is an innovative point-of-care diagnostics
               solutions provider dedicated to empowering both patients and
               healthcare professionals. Our name represents the three pillars
@@ -60,9 +60,9 @@ export default function MergedSections() {
               truly global.
             </p>
 
-            <button className="mt-6 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium">
+            {/* <button className="mt-6 bg-[#DF1931] text-white px-6 sm:px-8 py-3 rounded-lg font-medium">
               Know More
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
