@@ -177,7 +177,7 @@ export default function ProductCards() {
 
                 {/* KNOW MORE BUTTON */}
                 <a
-                  href={`${product.pdf}#toolbar=0&navpanes=0&scrollbar=0`}
+                    href={`/pdf-viewer?file=${product.pdf}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto text-center bg-[#D7262D] text-white px-6 py-3 rounded-xl text-sm font-medium whitespace-nowrap hover:bg-[#b71f24] transition-all"
