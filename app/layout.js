@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-WNF04M649E');
+  gtag('config', 'G-WNF04M649E'); 
 </script>
       </head> 
       <body className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable}  antialiased`}>
