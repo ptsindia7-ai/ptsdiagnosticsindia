@@ -29,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        <head>
+       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PNCK8PBH02"
           strategy="afterInteractive"
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-PNCK8PBH02');
           `}
         </Script>
-      </head>
+      </head> 
       <body className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable}  antialiased`}>
         <Navbar />
         {children}
