@@ -30,16 +30,20 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <head>
-        
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNF04M649E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-WNF04M649E'); 
-</script>
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=G-WNF04M649E"
+  strategy="beforeInteractive"
+/>
+
+<Script id="google-analytics" strategy="beforeInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-WNF04M649E');
+  `}
+</Script>
       </head> 
       <body className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable}  antialiased`}>
         <Navbar />
