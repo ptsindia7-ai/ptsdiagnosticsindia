@@ -32,13 +32,13 @@ export default function RootLayout({ children }) {
        <head>
         
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNCK8PBH02"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNF04M649E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-PNCK8PBH02');
+  gtag('config', 'G-WNF04M649E');
 </script>
       </head> 
       <body className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable}  antialiased`}>
